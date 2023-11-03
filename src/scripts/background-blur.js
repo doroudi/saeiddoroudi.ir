@@ -53,7 +53,8 @@ export function setBlurEffect() {
   }
 
   function m() {
-    let d; let b = Date.now()
+    let d
+    let b = Date.now()
     q = b > u + 1500 ? !1 : !0
     n && q && f.splice(0, 0, {
       time: b,
