@@ -67,7 +67,7 @@ export function setBlurEffect() {
     for (d = 1; d < f.length; d++) {
       const e = Math.sqrt((f[d].x - f[d - 1].x) ** 2 + (f[d].y - f[d - 1].y) ** 2)
       g.strokeStyle = `rgba(0,0,0,${Math.max(1 - (b - f[d].time) / 1e3, 0)})`
-      g.lineWidth = 50 + 75 * Math.max(1 - e / 50, 0)
+      g.lineWidth = 100 + 75 * Math.max(1 - e / 50, 0)
       g.beginPath()
       g.moveTo(f[d - 1].x, f[d - 1].y)
       g.lineTo(f[d].x, f[d].y)

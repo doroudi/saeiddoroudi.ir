@@ -47,7 +47,7 @@ onMounted(() => {
 <style lang="scss">
 .main-section {
   // border-left: solid 10px var(--primary);
-  background-image: url('@/assets/images/light.jpg');
+  background-image: url('/assets/images/light.jpg');
   background-size: cover;
   background-color: #d2d2d2;
   height: 100vh;
