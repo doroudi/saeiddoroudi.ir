@@ -1,11 +1,16 @@
 export function setBlurEffect() {
-  let a; let h; let k; let g; let c; let n = null
+  let a
+  let h
+  let k
+  let g
+  let c
+  let n = null
   let r = null
   const f = []
   let u = false
   let q = true
   function b() {
-    const el = document.querySelector('[id=mainbg]')
+    const el = document.querySelector('#mainbg')
     el.addEventListener('mousemove', (a) => {
       n = a.clientX
       r = a.clientY
@@ -20,7 +25,7 @@ export function setBlurEffect() {
     a.className = 'animated-bg'
     a.width = window.innerWidth
     a.height = window.innerHeight
-    document.querySelector('[id=mainbg]').appendChild(a)
+    document.querySelector('#mainbg').appendChild(a)
     h = document.createElement('canvas')
     h.width = window.innerWidth
     h.height = window.innerHeight
@@ -32,7 +37,7 @@ export function setBlurEffect() {
       g.shadowColor = '#f00'
       g.shadowBlur = navigator.userAgent.includes('Firefox') ? 0 : 30
       c = new Image('#mainbg')
-      let d = getBackgroundImage('[id=mainbg]')
+      let d = getBackgroundImage('#mainbg')
       if (d) {
         c.addEventListener('load', m, { once: true })
         d = d.replace(/url\((.*)\)/, '$1').replace(/["']/gi, '').replace(/\.jpg/, '_color.jpg')
@@ -76,8 +81,7 @@ export function setBlurEffect() {
     k.drawImage(c, 0, 0, d, b)
     k.globalCompositeOperation = 'destination-in'
     k.drawImage(h, 0, 0)
-    k.globalCompositeOperation
-        = 'source-over'
+    k.globalCompositeOperation = 'source-over'
   }
 
   'createTouch' in document || b()
