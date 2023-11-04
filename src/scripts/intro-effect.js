@@ -104,5 +104,7 @@ export function applyIntroEffect(containerSelector, buttonSelector) {
   }
 
   window.addEventListener('scroll', scrollPage)
-  trigger.addEventListener('click', () => { toggle('reveal') })
+  trigger.addEventListener('click', () => {
+    toggle('reveal')
+  })
 }

@@ -108,74 +108,74 @@ onMounted(() => {
 }
 
 .scroll-btn {
-	position: fixed;
-	bottom: 40px;
-	left: 50%;
-	z-index: 5000;
-	display: block;
-	margin-left: -0.5em;
-	padding: 0;
-	width: 1em;
-	height: 1em;
-	border: none;
-	background: transparent;
-	color: transparent;
-	font-size: 2em;
-	cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  z-index: 5000;
+  display: block;
+  margin-left: -0.5em;
+  padding: 0;
+  width: 1em;
+  height: 1em;
+  border: none;
+  background: transparent;
+  color: transparent;
+  font-size: 2em;
+  cursor: pointer;
 }
 
 .main-section:not(.notrans) .scroll-btn {
-	-webkit-transition: opacity 0.3s 0.5s;
-	transition: opacity 0.3s 0.5s;
+  -webkit-transition: opacity 0.3s 0.5s;
+  transition: opacity 0.3s 0.5s;
 }
 
 .main-section.modify:not(.notrans) .scroll-btn {
-	opacity: 0;
-	pointer-events: none;
-	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 .scroll-btn::before {
-	position: absolute;
-	bottom: 100%;
-	left: -100%;
-	padding: 0.8em;
-	width: 300%;
-	color: #fff;
-	content: attr(data-info);
-	font-size: 0.35em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: -100%;
+  padding: 0.8em;
+  width: 300%;
+  color: #fff;
+  content: attr(data-info);
+  font-size: 0.35em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .scroll-btn:focus {
-	outline: none;
+  outline: none;
 }
 
 .scroll-btn span {
-	position: relative;
-	display: block;
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .scroll-btn span::before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	color: #fff;
-	content: "\e097";
-	text-transform: none;
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-family: 'icomoon';
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  content: "\e097";
+  text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-family: 'icomoon';
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 </style>
