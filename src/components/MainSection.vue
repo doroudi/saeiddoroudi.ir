@@ -2,6 +2,7 @@
 import TypeIt from 'typeit'
 
 import { setBlurEffect } from '~/scripts/background-blur'
+import { applyIntroEffect } from '~/scripts/intro-effect'
 
 onMounted(() => {
   new TypeIt('#description', {
@@ -25,14 +26,13 @@ onMounted(() => {
     .delete()
     .go()
 
-  setTimeout(() => {
-    setBlurEffect()
-  }, 1000)
+  setBlurEffect()
+  applyIntroEffect('main-section', 'scroll-btn')
 })
 </script>
 
 <template>
-  <section id="mainbg" class="main-section">
+  <section class="main-section intro-effect-push">
     <div class="author-name">
       <h1 class="main-title">
         I'm SAEID<br>DOROUDI
@@ -105,5 +105,77 @@ onMounted(() => {
     }
 
   }
+}
+
+.scroll-btn {
+	position: fixed;
+	bottom: 40px;
+	left: 50%;
+	z-index: 5000;
+	display: block;
+	margin-left: -0.5em;
+	padding: 0;
+	width: 1em;
+	height: 1em;
+	border: none;
+	background: transparent;
+	color: transparent;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.main-section:not(.notrans) .scroll-btn {
+	-webkit-transition: opacity 0.3s 0.5s;
+	transition: opacity 0.3s 0.5s;
+}
+
+.main-section.modify:not(.notrans) .scroll-btn {
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.scroll-btn::before {
+	position: absolute;
+	bottom: 100%;
+	left: -100%;
+	padding: 0.8em;
+	width: 300%;
+	color: #fff;
+	content: attr(data-info);
+	font-size: 0.35em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.scroll-btn:focus {
+	outline: none;
+}
+
+.scroll-btn span {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.scroll-btn span::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	content: "\e097";
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'icomoon';
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 </style>
