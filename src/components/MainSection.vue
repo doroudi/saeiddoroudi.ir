@@ -46,16 +46,17 @@ onMounted(() => {
 
 <style lang="scss">
 .main-section {
-  // border-left: solid 10px var(--primary);
-  background-image: url('/assets/images/light.jpg');
-  background-size: cover;
-  background-color: #d2d2d2;
+  background-image: url(/assets/images/light.jpg);
+  background-size: 265%;
+  background-repeat: no-repeat;
+  background-color: #f5fafe;
+  background-position: top;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: start;
-  padding: 3.8rem;
+  padding: 1.9rem;
 
   .author-name {
     position: relative;
@@ -63,9 +64,8 @@ onMounted(() => {
 
     .main-title {
       font-family: "Montserrat", sans-serif;
-      font-size: 7rem;
-      /* text-transform: uppercase; */
-      line-height: 6.2rem;
+      font-size: 3.9rem;
+      line-height: 4.1rem;
 
     }
 
@@ -87,6 +87,23 @@ onMounted(() => {
   .animated-bg {
     position: absolute;
     inset: 0;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .main-section {
+    padding: 3.8rem;
+    background-image: url('/assets/images/light.jpg');
+    background-size: cover;
+    background-position: initial;
+
+    .author-name {
+      .main-title {
+        font-size: 7rem;
+        line-height: 6.2rem;
+      }
+    }
+
   }
 }
 </style>
