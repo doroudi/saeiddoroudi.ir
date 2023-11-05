@@ -1,6 +1,7 @@
 :root {
   --primary: #4CAF50;
   --secondary: #FC0;
+  --secondaryHover: #EEBB00;
 }
 
 html,
@@ -9,6 +10,10 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+html, body, .container, .header {
+	height: 100%;
 }
 
 body {
@@ -56,21 +61,13 @@ html.dark {
 	transition-duration: 1.2s;
 }
 
-.intro-effect-push .codrops-demos a {
-	color: #108576;
-}
 
 .intro-effect-push .header {
 	position: absolute;
 	z-index: 1500;
 }
 
-.intro-effect-push > .title {
-	position: relative;
-	top: auto;
-	left: auto;
-	padding: 6em 1em 2em;
-}
+
 
 .intro-effect-push .content > div {
 	margin-top: 50px;
@@ -84,7 +81,7 @@ html.dark {
 	opacity: 0;
 }
 
-.intro-effect-push.modify > .title,
+.intro-effect-push.modify > .author-name,
 .intro-effect-push.modify .content > div {
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
@@ -98,7 +95,7 @@ html.dark {
 }
 
 /* Delays */
-.intro-effect-push.modify:not(.notrans) > .title {
+.intro-effect-push.modify:not(.notrans) > .author-name {
 	-webkit-transition-delay: 0.5s;
 	transition-delay: 0.5s;
 }

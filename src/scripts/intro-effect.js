@@ -91,6 +91,13 @@ export function applyIntroEffect(containerSelector, buttonSelector) {
     }, 1200)
   }
 
+  function wheel() {
+    // for IE
+    // if( ie ) {
+    // preventDefault(e);
+    // }
+  }
+
   // refreshing the page...
   const pageScroll = scrollY()
   noscroll = pageScroll === 0
