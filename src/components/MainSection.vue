@@ -26,60 +26,104 @@ onMounted(() => {
     .delete()
     .go()
 
-  setBlurEffect()
-  applyIntroEffect('main-section', 'scroll-btn')
+  setBlurEffect('.bg-image')
+  applyIntroEffect('.main-section', '.scroll-btn')
 })
 </script>
 
 <template>
-  <section class="main-section intro-effect-push">
-    <div class="author-name">
-      <h1 class="main-title">
-        I'm SAEID<br>DOROUDI
-      </h1>
-      <h2 class="introduce">
-        I'm: <span id="description" />
-      </h2>
-    </div>
+  <section id="container" class="intro-effect-push main-section container">
+    <header class="header">
+      <div class="bg-image">
+        <div class="author-name">
+          <h1 class="main-title">
+            I'm SAEID<br>DOROUDI
+          </h1>
+          <h2 class="introduce">
+            I'm: <span id="description" />
+          </h2>
+        </div>
+
+        <a class="scroll-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
+          >
+            <path d="m18.707 12.707-1.414-1.414L13 15.586V6h-2v9.586l-4.293-4.293-1.414 1.414L12 19.414z" />
+          </svg>
+        </a>
+      </div>
+    </header>
+    <section class="section content">
+      <div>Hi I'm Saeid Doroudi</div>
+    </section>
   </section>
 </template>
 
 <style lang="scss">
+.container:not(.notrans) button.scroll-btn {
+  -webkit-transition: opacity 0.3s 0.5s;
+  transition: opacity 0.3s 0.5s;
+}
+
+.container.modify:not(.notrans) button.scroll-btn {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.section {
+  min-height: 101vh;
+}
+
 .main-section {
-  background-image: url(/assets/images/light.jpg);
-  background-size: 265%;
-  background-repeat: no-repeat;
-  background-color: #f5fafe;
-  background-position: top;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: start;
-  padding: 1.9rem;
+  height: 102vh;
+  margin-top: -50px;
+  .header {
 
-  .author-name {
-    position: relative;
-    z-index: 999;
+    width: 100%;
 
-    .main-title {
-      font-family: "Montserrat", sans-serif;
-      font-size: 3.9rem;
-      line-height: 4.1rem;
+    .bg-image {
+      height: 100vh;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: end;
+      padding: 1.9rem;
+      padding: 3.8rem;
+      background-image: url(/assets/images/light.jpg);
+      // background-size: 265%;
+      background-repeat: no-repeat;
+      background-color: #f5fafe;
+      background-position: top;
 
-    }
+      .author-name {
+        position: relative;
+        z-index: 999;
 
-    .introduce {
-      padding-top: .4rem;
-      font-family: sans-serif;
-      padding: .4rem 0.2rem;
-      font-size: 1.5rem;
+        .main-title {
+          font-family: "Montserrat", sans-serif;
+          font-size: 3.9rem;
+          font-size: 7rem;
+          line-height: 4.1rem;
+          line-height: 6rem;
 
-      #description {
-        display: inline-block;
-        background-color: var(--secondary);
-        color: #000;
-        padding: 0.1rem 0.3rem;
+        }
+
+        .introduce {
+          padding-top: .4rem;
+          font-family: sans-serif;
+          padding: .4rem 0.2rem;
+          font-size: 1.5rem;
+
+          #description {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: #000;
+            padding: 0.1rem 0.3rem;
+          }
+        }
       }
     }
   }
@@ -90,38 +134,53 @@ onMounted(() => {
   }
 }
 
-@media screen and (min-width: 760px) {
-  .main-section {
-    padding: 3.8rem;
-    background-image: url('/assets/images/light.jpg');
-    background-size: cover;
-    background-position: initial;
-
-    .author-name {
-      .main-title {
-        font-size: 7rem;
-        line-height: 6.2rem;
-      }
-    }
-
-  }
+.content {
+  background: #546E7A;
 }
+
+// @media screen and (min-width: 760px) {
+//   .main-section {
+//     .bg-image {
+
+//       padding: 3.8rem;
+//       background-image: url('/assets/images/light.jpg');
+//       background-size: cover;
+//       background-position: initial;
+//     }
+
+//     .author-name {
+//       .main-title {
+//         font-size: 7rem;
+//         line-height: 6.2rem;
+//       }
+//     }
+
+//   }
+// }
 
 .scroll-btn {
   position: fixed;
-  bottom: 40px;
-  left: 50%;
+  bottom: 100px;
+  right: 100px;
   z-index: 5000;
-  display: block;
-  margin-left: -0.5em;
-  padding: 0;
-  width: 1em;
-  height: 1em;
-  border: none;
-  background: transparent;
-  color: transparent;
+
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 2em;
   cursor: pointer;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  transition: all;
+
+  &:hover {
+    background-color: var(--secondaryHover);
+    transition: all 0.3s;
+  }
+
 }
 
 .main-section:not(.notrans) .scroll-btn {
@@ -134,48 +193,5 @@ onMounted(() => {
   pointer-events: none;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-}
-
-.scroll-btn::before {
-  position: absolute;
-  bottom: 100%;
-  left: -100%;
-  padding: 0.8em;
-  width: 300%;
-  color: #fff;
-  content: attr(data-info);
-  font-size: 0.35em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.scroll-btn:focus {
-  outline: none;
-}
-
-.scroll-btn span {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-.scroll-btn span::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  content: "\e097";
-  text-transform: none;
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  font-family: 'icomoon';
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 </style>

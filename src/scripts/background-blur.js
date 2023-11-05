@@ -1,4 +1,4 @@
-export function setBlurEffect() {
+export function setBlurEffect(selector) {
   let a
   let h
   let k
@@ -10,7 +10,7 @@ export function setBlurEffect() {
   let u = false
   let q = true
   function b() {
-    const el = document.querySelector('.main-section')
+    const el = document.querySelector(selector)
     el.addEventListener('mousemove', (a) => {
       n = a.clientX
       r = a.clientY
@@ -25,7 +25,7 @@ export function setBlurEffect() {
     a.className = 'animated-bg'
     a.width = window.innerWidth
     a.height = window.innerHeight
-    document.querySelector('.main-section').appendChild(a)
+    document.querySelector(selector).appendChild(a)
     h = document.createElement('canvas')
     h.width = window.innerWidth
     h.height = window.innerHeight
@@ -36,8 +36,8 @@ export function setBlurEffect() {
       g.lineCap = 'round'
       g.shadowColor = '#CCC'
       g.shadowBlur = navigator.userAgent.includes('Firefox') ? 0 : 30
-      c = new Image('.main-section')
-      let d = getBackgroundImage('.main-section')
+      c = new Image(selector)
+      let d = getBackgroundImage(selector)
       if (d) {
         c.addEventListener('load', m, { once: true })
         d = d.replace(/url\((.*)\)/, '$1').replace(/["']/gi, '').replace(/\.jpg/, '_color.jpg')
