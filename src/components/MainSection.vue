@@ -162,33 +162,32 @@ onMounted(() => {
 // }
 
 .scroll-btn {
+  transform: scale(.95);
   position: fixed;
   bottom: 100px;
   right: 100px;
   z-index: 5000;
-
   width: 2em;
   height: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 2em;
   cursor: pointer;
   background-color: var(--secondary);
   border-radius: 50%;
-  transition: all .5s;
+  transition: all 1s;
 
   svg {
     animation: arrowDown 2s infinite;
   }
 
   &:hover {
-    transition: all 0.5s;
+    transform: scale(1);
+    transition: transform 0.5s;
     background-color: var(--secondaryHover);
-
     svg {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 

@@ -5,14 +5,14 @@ useHead({
     { name: 'description', content: 'Personal CV of Saeid Doroudi, Professional Software developer' },
     {
       name: 'theme-color',
-      content: () => isDark.value ? '#4CAF50' : '#ffffff',
+      content: () => isDark.value ? '#EEBB00' : '#ffffff',
     },
   ],
   link: [
     {
       rel: 'icon',
-      type: 'image/svg+xml',
-      href: () => preferredDark.value ? '/favicon-dark.svg' : '/favicon.svg',
+      type: 'image/png',
+      href: () => preferredDark.value ? '/favicon.png' : '/favicon.png',
     },
   ],
 })
