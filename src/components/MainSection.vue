@@ -46,7 +46,7 @@ onMounted(() => {
 
         <a class="scroll-btn">
           <svg
-            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"
             style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
           >
             <path d="m18.707 12.707-1.414-1.414L13 15.586V6h-2v9.586l-4.293-4.293-1.414 1.414L12 19.414z" />
@@ -80,12 +80,13 @@ onMounted(() => {
 .main-section {
   height: 102vh;
   margin-top: -50px;
+
   .header {
 
     width: 100%;
 
     .bg-image {
-      height: 100vh;
+      height: 101vh;
       display: flex;
       position: relative;
       flex-direction: column;
@@ -93,10 +94,11 @@ onMounted(() => {
       padding: 1.9rem;
       padding: 3.8rem;
       background-image: url(/assets/images/light.jpg);
-      // background-size: 265%;
+      background-position-x: 2px;
+      background-position-y: 4px;
       background-repeat: no-repeat;
       background-color: #f5fafe;
-      background-position: top;
+      background-size: cover;
 
       .author-name {
         position: relative;
@@ -131,6 +133,7 @@ onMounted(() => {
   .animated-bg {
     position: absolute;
     inset: 0;
+    object-fit: cover;
   }
 }
 
@@ -174,11 +177,19 @@ onMounted(() => {
   cursor: pointer;
   background-color: var(--secondary);
   border-radius: 50%;
-  transition: all;
+  transition: all .5s;
+
+  svg {
+    animation: arrowDown 2s infinite;
+  }
 
   &:hover {
+    transition: all 0.5s;
     background-color: var(--secondaryHover);
-    transition: all 0.3s;
+
+    svg {
+      transform: scale(1.2);
+    }
   }
 
 }
@@ -193,5 +204,19 @@ onMounted(() => {
   pointer-events: none;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+}
+
+@keyframes arrowDown {
+  0% {
+    margin-top: -10px;
+  }
+
+  50% {
+    margin-top: 20px;
+  }
+
+  100% {
+    margin-top: -10px;
+  }
 }
 </style>
