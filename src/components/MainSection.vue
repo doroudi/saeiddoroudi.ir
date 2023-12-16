@@ -114,9 +114,8 @@ onMounted(() => {
         }
 
         .introduce {
-          padding-top: .4rem;
-          font-family: sans-serif;
-          padding: .4rem 0.2rem;
+          font-family: 'JetBrains Mono', monospace;
+          padding: .6rem 0.2rem;
           font-size: 1.5rem;
 
           #description {
