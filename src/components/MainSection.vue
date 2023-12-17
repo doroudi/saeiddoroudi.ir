@@ -1,63 +1,21 @@
 <script setup>
-import TypeIt from 'typeit'
-
 import { setBlurEffect } from '~/scripts/background-blur'
-import { applyIntroEffect } from '~/scripts/intro-effect'
 
 onMounted(() => {
-  new TypeIt('#description', {
-    loop: true,
-    speed: 100,
-  })
-    .type('Software Engineer')
-    .pause(2000)
-    .delete()
-    .type('System Designer')
-    .pause(2000)
-    .delete()
-    .type('.Net specialist')
-    .pause(2000)
-    .delete()
-    .type('FrontEnd Professional')
-    .pause(2000)
-    .delete()
-    .type('Open Source Contributor')
-    .pause(2000)
-    .delete()
-    .go()
-
   setBlurEffect('.bg-image')
-  applyIntroEffect('.main-section', '.scroll-btn')
 })
 </script>
 
 <template>
-  <section id="container" class="intro-effect-push main-section container">
+  <main id="container" class="intro-effect-push main-section">
     <header class="header">
       <div class="bg-image">
-        <div class="author-name">
-          <h1 class="main-title">
-            I'm SAEID<br>DOROUDI
-          </h1>
-          <h2 class="introduce">
-            I'm: <span id="description" />
-          </h2>
-        </div>
-
-        <a class="scroll-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"
-            style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
-          >
-            <path d="m18.707 12.707-1.414-1.414L13 15.586V6h-2v9.586l-4.293-4.293-1.414 1.414L12 19.414z" />
-          </svg>
-        </a>
+        <AuthorName />
+        <ScrollButton />
       </div>
     </header>
-    <section class="section content">
-      <div>Hi I'm Saeid Doroudi</div>
-    </section>
-  </section>
+    <AboutMe />
+  </main>
 </template>
 
 <style lang="scss">
@@ -78,8 +36,7 @@ onMounted(() => {
 }
 
 .main-section {
-  height: 102vh;
-  margin-top: -50px;
+  height: 100vh;
 
   .header {
 
@@ -100,32 +57,6 @@ onMounted(() => {
       background-color: #f5fafe;
       background-size: cover;
 
-      .author-name {
-        position: relative;
-        z-index: 999;
-
-        .main-title {
-          font-family: "Montserrat", sans-serif;
-          font-size: 3.9rem;
-          font-size: 7rem;
-          line-height: 4.1rem;
-          line-height: 6rem;
-
-        }
-
-        .introduce {
-          font-family: 'JetBrains Mono', monospace;
-          padding: .6rem 0.2rem;
-          font-size: 1.5rem;
-
-          #description {
-            display: inline-block;
-            background-color: var(--secondary);
-            color: #000;
-            padding: 0.1rem 0.3rem;
-          }
-        }
-      }
     }
   }
 
@@ -134,10 +65,6 @@ onMounted(() => {
     inset: 0;
     object-fit: cover;
   }
-}
-
-.content {
-  background: #546E7A;
 }
 
 // @media screen and (min-width: 760px) {
@@ -160,38 +87,6 @@ onMounted(() => {
 //   }
 // }
 
-.scroll-btn {
-  transform: scale(.95);
-  position: fixed;
-  bottom: 100px;
-  right: 100px;
-  z-index: 5000;
-  width: 2em;
-  height: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2em;
-  cursor: pointer;
-  background-color: var(--secondary);
-  border-radius: 50%;
-  transition: all 1s;
-
-  svg {
-    animation: arrowDown 2s infinite;
-  }
-
-  &:hover {
-    transform: scale(1);
-    transition: transform 0.5s;
-    background-color: var(--secondaryHover);
-    svg {
-      transform: scale(1.1);
-    }
-  }
-
-}
-
 .main-section:not(.notrans) .scroll-btn {
   -webkit-transition: opacity 0.3s 0.5s;
   transition: opacity 0.3s 0.5s;
@@ -202,19 +97,5 @@ onMounted(() => {
   pointer-events: none;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-}
-
-@keyframes arrowDown {
-  0% {
-    margin-top: -10px;
-  }
-
-  50% {
-    margin-top: 20px;
-  }
-
-  100% {
-    margin-top: -10px;
-  }
 }
 </style>

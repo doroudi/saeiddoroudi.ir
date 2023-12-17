@@ -7,8 +7,12 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AboutMe: typeof import('./components/AboutMe.vue')['default']
+    AuthorName: typeof import('./components/AuthorName.vue')['default']
+    DeveloperName: typeof import('./components/DeveloperName.vue')['default']
     MainSection: typeof import('./components/MainSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ScrollButton: typeof import('./components/ScrollButton.vue')['default']
   }
 }
