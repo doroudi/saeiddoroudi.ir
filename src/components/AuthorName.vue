@@ -60,7 +60,7 @@ onMounted(() => {
 
     #description {
       display: inline-block;
-      background-color: var(--secondary);
+      background-color: var(--primary);
       color: #000;
       padding: 0.1rem 0.3rem;
     }

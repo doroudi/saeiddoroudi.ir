@@ -3,19 +3,19 @@
 </script>
 
 <template>
-  <section class="section content container">
+  <section class="section content p-2 container md:p-8">
     <div class="flex flex-row">
       <div class="author-image">
         <img src="@/assets/images/profile.jpg" alt="سعید درودی saeid doroudi">
       </div>
       <div>
         <h3 class="bubble">
-          Hi I'm
+          About Me
         </h3>
         <h2 class="name">
           Saeid Doroudi.
         </h2>
-        <p class="about-me-text pt-3">
+        <p class="w-3/4 pt-3">
           Full Stack Software developer with more than 15 yrs of experience in software industry.<br>
           I get familiar with programming because of a curiosity and register for programming class for QBasic and
           VB6<br>
@@ -29,13 +29,18 @@
         </p>
       </div>
     </div>
+    <div class="flex">
+      <h3 class="bubble">
+        What I'm Doing
+      </h3>
+    </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
 .content {
     background: #f3f3f5;
-    padding: 5rem;
+
 }
 
 .name {
@@ -45,12 +50,14 @@
 
 .bubble {
     display: inline-block;
-    background: var(--secondary);
+    background: var(--primary);
     border-radius: 14px 14px 0px 14px;
     color: #FFF;
     padding: 0.3rem 0.8rem;
     font-weight: bold;
 }
+
+.name { color: #3a3a3a;}
 
 .about-me-text {
     width: 50%;

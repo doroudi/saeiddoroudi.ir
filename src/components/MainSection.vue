@@ -67,25 +67,25 @@ onMounted(() => {
   }
 }
 
-// @media screen and (min-width: 760px) {
-//   .main-section {
-//     .bg-image {
+@media screen and (min-width: 760px) {
+  .main-section {
+    .bg-image {
 
-//       padding: 3.8rem;
-//       background-image: url('/assets/images/light.jpg');
-//       background-size: cover;
-//       background-position: initial;
-//     }
+      padding: 3.8rem;
+      background-image: url('/assets/images/light.jpg');
+      background-size: cover;
+      background-position: initial;
+    }
 
-//     .author-name {
-//       .main-title {
-//         font-size: 7rem;
-//         line-height: 6.2rem;
-//       }
-//     }
+    .author-name {
+      .main-title {
+        font-size: 7rem;
+        line-height: 6.2rem;
+      }
+    }
 
-//   }
-// }
+  }
+}
 
 .main-section:not(.notrans) .scroll-btn {
   -webkit-transition: opacity 0.3s 0.5s;

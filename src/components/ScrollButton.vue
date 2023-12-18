@@ -27,7 +27,7 @@
   justify-content: center;
   font-size: 2em;
   cursor: pointer;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   border-radius: 50%;
   transition: all 1s;
 

@@ -32,7 +32,7 @@ html.dark {
 }
 
 #nprogress .bar {
-  background: #f7a664;
+  background: var(--secondary);
   opacity: 0.75;
   position: fixed;
   z-index: 1031;
@@ -64,10 +64,7 @@ html.dark {
 	z-index: 1500;
 }
 
-
-
 .intro-effect-push .content > div {
-	margin-top: 50px;
 	color: #b2b2c0;
 }
 
