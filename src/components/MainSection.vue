@@ -32,31 +32,26 @@ onMounted(() => {
 }
 
 .section {
-  min-height: 101vh;
+  min-height: 100vh;
 }
 
 .main-section {
   height: 100vh;
-
   .header {
-
     width: 100%;
-
     .bg-image {
-      height: 101vh;
+      height: 100vh;
       display: flex;
       position: relative;
       flex-direction: column;
       justify-content: end;
       padding: 1.9rem;
-      padding: 3.8rem;
       background-image: url(/assets/images/light.jpg);
-      background-position-x: 2px;
-      background-position-y: 4px;
+      background-position-x: center;
+      background-position-y: center;
       background-repeat: no-repeat;
       background-color: #f5fafe;
-      background-size: cover;
-
+      background-size: 180%;
     }
   }
 
@@ -67,23 +62,13 @@ onMounted(() => {
   }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 640px) {
   .main-section {
     .bg-image {
-
       padding: 3.8rem;
-      background-image: url('/assets/images/light.jpg');
       background-size: cover;
       background-position: initial;
     }
-
-    .author-name {
-      .main-title {
-        font-size: 7rem;
-        line-height: 6.2rem;
-      }
-    }
-
   }
 }
 

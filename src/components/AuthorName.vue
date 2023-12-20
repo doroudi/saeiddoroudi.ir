@@ -47,23 +47,41 @@ onMounted(() => {
   .main-title {
     font-family: "Montserrat", sans-serif;
     font-size: 3.9rem;
-    font-size: 7rem;
     line-height: 4.1rem;
-    line-height: 6rem;
-
   }
 
   .introduce {
     font-family: 'JetBrains Mono', monospace;
-    padding: .6rem 0.2rem;
-    font-size: 1.5rem;
+    padding: .3rem 0.1rem;
+    font-size: 1rem;
 
     #description {
       display: inline-block;
       background-color: var(--primary);
       color: #000;
+      padding: 0.08rem 0.1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .author-name {
+
+    .main-title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 7rem;
+      line-height: 6rem;
+    }
+
+    .introduce {
+
+    padding: .6rem 0.2rem;
+    font-size: 1.5rem;
+
+    #description {
       padding: 0.1rem 0.3rem;
     }
+  }
   }
 }
 </style>
