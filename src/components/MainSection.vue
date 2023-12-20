@@ -37,8 +37,10 @@ onMounted(() => {
 
 .main-section {
   height: 100vh;
+
   .header {
     width: 100%;
+
     .bg-image {
       height: 100vh;
       display: flex;
@@ -64,10 +66,12 @@ onMounted(() => {
 
 @media screen and (min-width: 640px) {
   .main-section {
-    .bg-image {
-      padding: 3.8rem;
-      background-size: cover;
-      background-position: initial;
+    .header {
+      .bg-image {
+        padding: 3.8rem;
+        background-size: cover;
+        background-position: initial;
+      }
     }
   }
 }
