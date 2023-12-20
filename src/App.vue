@@ -6,7 +6,7 @@ useHead({
     { name: 'keywords', content: 'Saeid Doroudi, CV, .Net Developer, Programming, سعید درودی' },
     {
       name: 'theme-color',
-      content: () => isDark.value ? '#EEBB00' : '#ffffff',
+      content: () => isDark.value ? '#4CAF50' : '#ffffff',
     },
   ],
   link: [
