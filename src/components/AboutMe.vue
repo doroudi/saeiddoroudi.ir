@@ -17,9 +17,10 @@
             Saeid Doroudi
           </h2>
           <p class="pt-3 text-justify">
-            Full Stack Software developer with more than 13 yrs of experience in software industry.<br>
+            Full Stack Software developer with more than 15 yrs of experience in software industry.<br>
             Developing Web and service based solutions (specially based on ASP.Net and Web Api) for more than a decade. <br>
-            Loving implement UI and client side applications and SPA solutions in JavaScript ecosystem and specially in Vue<br>           .Net ecosystem based applications developer (Asp.Net, WinForms, WPF, ...)
+            Loving implement UI and client side applications and SPA solutions in JavaScript ecosystem and specially in Vue<br>
+            Educated Software architecture and System Designer with hands on experience in various businesses.
           </p>
         </div>
       </div>
