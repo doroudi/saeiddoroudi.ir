@@ -43,6 +43,7 @@ onMounted(() => {
 .author-name {
   position: relative;
   z-index: 999;
+  user-select:none;
 
   .main-title {
     font-family: "Montserrat", sans-serif;

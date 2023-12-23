@@ -12,6 +12,15 @@ body,
   padding: 0;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #000;
+  background: var(--secondary);
+}
+
+::selection {
+  color: #000;
+  background: var(--secondary);
+}
 html, body, .container, .header {
 	height: 100%;
 }
