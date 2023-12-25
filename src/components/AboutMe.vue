@@ -16,12 +16,21 @@
           <h2 class="name py-2">
             Saeid Doroudi
           </h2>
-          <p class="pt-3 text-justify">
+          <p class="py-3 text-justify">
             Full Stack Software developer with more than 15 yrs of experience in software industry.<br>
             Developing Web and service based solutions (specially based on ASP.Net and Web Api) for more than a decade. <br>
             Loving implement UI and client side applications and SPA solutions in JavaScript ecosystem and specially in Vue<br>
             Educated Software architecture and System Designer with hands on experience in various businesses.
           </p>
+
+          <div class="my-4">
+            <a href="/uploads/resume.pdf" class="mx-1 border-2 border-green-600 rounded-full bg-transparent p-3 text-sm font-semibold text-green-600 transition duration-300 hover:(border-transparent bg-green-600 text-white) focus:(outline-none ring-2 ring-offset-2 ring-green-600)">
+              Download Resume
+            </a>
+            <a href="tel://+989144786806" class="mx-1 border-2 border-gray-200 rounded-full p-3 text-sm font-semibold text-gray-600 transition duration-300 hover:(border-transparent bg-gray-400 text-white) focus:(outline-none ring-2 ring-offset-2 ring-gray-600)">
+              Contact
+            </a>
+          </div>
         </div>
       </div>
       <div class="my-3">
