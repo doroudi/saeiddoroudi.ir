@@ -1,8 +1,8 @@
 <script setup>
-import { setBlurEffect } from '~/scripts/background-blur'
+import { createBlurEffect } from '~/scripts/background-blur'
 
 onMounted(() => {
-  setBlurEffect('.bg-image')
+  createBlurEffect('.bg-image')
 })
 </script>
 
