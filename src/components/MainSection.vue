@@ -7,7 +7,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <main id="container" class="intro-effect-push main-section">
+  <section id="container" class="intro-effect-push main-section">
     <header class="header">
       <div class="bg-image">
         <AuthorName />
@@ -15,7 +15,7 @@ onMounted(() => {
       </div>
     </header>
     <AboutMe />
-  </main>
+  </section>
 </template>
 
 <style lang="scss">
@@ -36,7 +36,6 @@ onMounted(() => {
 }
 
 .main-section {
-  height: 100vh;
 
   .header {
     width: 100%;

@@ -24,7 +24,7 @@
           </p>
 
           <div class="my-4">
-            <a href="/uploads/resume.pdf" class="mx-1 border-2 border-green-600 rounded-full bg-transparent p-3 text-sm font-semibold text-green-600 transition duration-300 hover:(border-transparent bg-green-600 text-white) focus:(outline-none ring-2 ring-offset-2 ring-green-600)">
+            <a href="/uploads/Saeid_Doroudi_Resume.pdf" class="mx-1 border-2 border-green-600 rounded-full bg-transparent p-3 text-sm font-semibold text-green-600 transition duration-300 hover:(border-transparent bg-green-600 text-white) focus:(outline-none ring-2 ring-offset-2 ring-green-600)">
               Download Resume
             </a>
             <a href="tel:+989144786806" class="mx-1 border-2 border-gray-200 rounded-full p-3 text-sm font-semibold text-gray-600 transition duration-300 hover:(border-transparent bg-gray-400 text-white) focus:(outline-none ring-2 ring-offset-2 ring-gray-600)">
@@ -45,7 +45,6 @@
 <style lang="scss" scoped>
 .content {
   background: #f3f3f5;
-
 }
 
 .name {
