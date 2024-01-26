@@ -17,6 +17,7 @@
     "sizecheck": "npx vite-bundle-visualizer"
   },
   "dependencies": {
+    "@iconify-json/mdi": "^1.1.64",
     "@unhead/vue": "^1.8.2",
     "@unocss/reset": "^0.57.1",
     "@vueuse/core": "^10.5.0",
@@ -31,7 +32,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^1.1.0",
-    "@iconify-json/carbon": "^1.1.21",
     "@intlify/unplugin-vue-i18n": "^1.5.0",
     "@types/markdown-it-link-attributes": "^3.0.3",
     "@types/nprogress": "^0.2.2",

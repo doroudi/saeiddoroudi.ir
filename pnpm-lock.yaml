@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@iconify-json/mdi':
+    specifier: ^1.1.64
+    version: 1.1.64
   '@unhead/vue':
     specifier: ^1.8.2
     version: 1.8.2(vue@3.3.7)
@@ -43,9 +46,6 @@ devDependencies:
   '@antfu/eslint-config':
     specifier: ^1.1.0
     version: 1.1.0(eslint@8.52.0)(typescript@5.2.2)(vitest@0.34.6)
-  '@iconify-json/carbon':
-    specifier: ^1.1.21
-    version: 1.1.21
   '@intlify/unplugin-vue-i18n':
     specifier: ^1.5.0
     version: 1.5.0(rollup@4.2.0)(vue-i18n@9.6.4)
@@ -1989,15 +1989,14 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@iconify-json/carbon@1.1.21:
-    resolution: {integrity: sha512-bK2cMVM4noBU+FGlay433flpXLRzQu0ED095iAnoO6ka3yb4uz0lvb8acpN5gthyGLJ89C4HpfIbQZLQnMKQww==}
+  /@iconify-json/mdi@1.1.64:
+    resolution: {integrity: sha512-zGeo5TjhNFAY6FmSDBLAzDO811t77r6v/mDi7CAL9w5eXqKez6bIjk8R9AL/RHIeq44ALP4Ozr4lMqFTkHr7ug==}
     dependencies:
       '@iconify/types': 2.0.0
-    dev: true
+    dev: false
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: true
 
   /@iconify/utils@2.1.11:
     resolution: {integrity: sha512-M/w3PkN8zQYXi8N6qK/KhnYMfEbbb6Sk8RZVn8g+Pmmu5ybw177RpsaGwpziyHeUsu4etrexYSWq3rwnIqzYCg==}

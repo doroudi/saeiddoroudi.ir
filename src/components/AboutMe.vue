@@ -1,9 +1,25 @@
 <script setup>
-const works = [
-  { title: 'Web Development', icon: '', description: 'Web Development' },
-  { title: '.Net Development', icon: '', description: '.Net Platform' },
-  { title: 'System Design', icon: '', description: '' },
-  { title: 'Mobile Development', icon: '', description: '' },
+const skills = [
+  {
+    title: 'FrontEnd',
+    content: 'JavaScript | TypeScript | Vue.js | PWA | React | Ionic | jQuery | HTML | CSS | Angular | Blazor | SSR/SSG | Cypress',
+  },
+  {
+    title: 'BackEnd',
+    content: 'C# | .Net | ASP.Net | OOP | SQL Server | Redis | NoSQL | Testing | RabbitMQ | Kafka | EF Core | MongoDb',
+  },
+  {
+    title: 'Software design',
+    content: 'System Design | Clean Architecture | MicroServices | Event Sourcing | CQRS | Agile | Web Security basics | TDD | BDD',
+  },
+  {
+    title: 'Deployment',
+    content: 'DevOps | AzureDevops | Github Actions | Docker | Kubernetes | E2E Testing ',
+  },
+  {
+    title: 'Others',
+    content: 'Ionic | WinForms | WPF | Telegram Bot | Speak in English, Turkish and Persian',
+  },
 ]
 </script>
 
@@ -21,39 +37,50 @@ const works = [
           <h2 class="name py-2">
             Saeid Doroudi
           </h2>
-          <p class="py-3 text-justify">
+          <p class="py-3 text-justify text-dark">
             Full Stack Software developer with more than 15 yrs of experience in software industry.<br>
             Developing Web and service based solutions (specially based on ASP.Net and Web Api) for more than a decade.
             <br>
-            Loving implement UI and client side applications and SPA solutions in JavaScript ecosystem and specially in
+            Loving implement UI and client side applications and SPA solutions in JavaScript ecosystem, specially in
             Vue<br>
             Educated Software architecture and System Designer with hands on experience in various businesses.
+            <br>
+            I'm seeking new job opportunity to learn more and do amazing works, feel free to contact me.
           </p>
 
-          <div class="my-4">
+          <div class="center my-4 flex items-center">
             <a
               href="/uploads/Saeid_Doroudi_Resume.pdf"
-              class="mx-1 border-2 border-green-600 rounded-full bg-transparent p-3 text-sm font-semibold text-green-600 transition duration-300 hover:(border-transparent bg-green-600 text-white) focus:(outline-none ring-2 ring-offset-2 ring-green-600)"
+              class="mx-1 flex items-center border-2 border-green-600 rounded-full bg-transparent p-3 text-sm font-semibold text-green-600 transition duration-300 hover:(border-transparent bg-green-600 text-white) focus:(outline-none ring-2 ring-offset-2 ring-green-600)"
             >
               Download Resume
+              <i class="i-mdi:arrow-down ml-2 inline-block" />
             </a>
-            <a
-              href="tel:+989144786806"
-              class="mx-1 border-2 border-gray-200 rounded-full p-3 text-sm font-semibold text-gray-600 transition duration-300 hover:(border-transparent bg-gray-400 text-white) focus:(outline-none ring-2 ring-offset-2 ring-gray-600)"
-            >
-              Contact
+
+            <a class="round-link" href="https://github.com/doroudi" target="_blank">
+              <span class="i-mdi:github font-size-1.5em" />
+            </a>
+            <a class="round-link" href="https://stackoverflow.com/users/5292901/saeid-doroudi" target="_blank">
+              <span class="i-mdi:stack-overflow font-size-1.5em" />
+            </a>
+            <a class="round-link" href="https://www.linkedin.com/in/saeiddoroudi/" target="_blank">
+              <span class="i-mdi:linkedin font-size-1.5em" />
+            </a>
+            <a class="round-link" href="mailto:doroudi@outlook.com" target="_blank">
+              <span class="i-mdi:email font-size-1.5em" />
             </a>
           </div>
 
-          <div class="pb-3 pt-10">
+          <section class="pb-3 pt-10">
             <h3 class="bubble">
-              What I'm Doing
+              Skills
             </h3>
 
-            <div class="grid grid-cols-2 gap-4">
-              <WorkInfo v-for="(item, i) of works" v-bind="item" :key="i" />
+            <div class="mt-4" />
+            <div class="">
+              <Skill v-for="(item, i) of skills" v-bind="item" :key="i" />
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
@@ -62,7 +89,7 @@ const works = [
 
 <style lang="scss" scoped>
 .content {
-  background: #f3f3f5;
+  // background: #f3f3f5;
 }
 
 .name {

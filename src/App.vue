@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: `Saeid Doroudi's Personal website`,
+  title: `Home Page of Saeid Doroudi - Professional Web Developer`,
   meta: [
     { name: 'description', content: 'Personal CV of Saeid Doroudi, Professional Software developer, وبسایت شخصی سعید درودی' },
     { name: 'keywords', content: 'Saeid Doroudi, CV, .Net Developer, Programming, سعید درودی' },

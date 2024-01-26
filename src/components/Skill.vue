@@ -1,7 +1,7 @@
 <script setup lang="ts">
 interface Props {
   title: string
-  description: string
+  content: string
 }
 defineProps<Props>()
 </script>
@@ -11,7 +11,9 @@ defineProps<Props>()
     <h3 class="title mb-4 font-bold font-mono">
       {{ title }}
     </h3>
-    <p>{{ description }}</p>
+    <p class="text-dark-100">
+      {{ content }}
+    </p>
   </div>
 </template>
 
