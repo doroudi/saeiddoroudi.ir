@@ -53,7 +53,7 @@ const skills = [
               href="/uploads/Saeid_Doroudi_Resume.pdf"
               class="mx-1 flex items-center border-2 border-green-600 rounded-full bg-transparent p-3 text-sm font-semibold text-green-600 transition duration-300 hover:(border-transparent bg-green-600 text-white) focus:(outline-none ring-2 ring-offset-2 ring-green-600)"
             >
-              Download Resume
+              Resume
               <i class="i-mdi:arrow-down ml-2 inline-block" />
             </a>
 

@@ -17,8 +17,8 @@
 .scroll-btn {
   transform: scale(.95);
   position: fixed;
-  bottom: 100px;
-  right: 100px;
+  bottom: 60px;
+  right: calc(50% - 1em);
   z-index: 5000;
   width: 2em;
   height: 2em;
@@ -44,6 +44,13 @@
     }
   }
 
+}
+
+@media screen and (min-width: 640px) {
+  .scroll-btn {
+    bottom: 100px;
+    right: 100px;
+  }
 }
 
 @keyframes arrowDown {
