@@ -17,7 +17,7 @@
 .scroll-btn {
   transform: scale(.95);
   position: fixed;
-  bottom: 60px;
+  bottom: 300px;
   right: calc(50% - 1em);
   z-index: 5000;
   width: 2em;

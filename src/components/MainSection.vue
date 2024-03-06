@@ -47,7 +47,7 @@ onMounted(() => {
       flex-direction: column;
       justify-content: end;
       padding: 1.9rem;
-      padding-bottom: 9rem;
+      padding-bottom: 10rem;
       background-image: url(/assets/images/light.jpg);
       background-position-x: center;
       background-position-y: center;

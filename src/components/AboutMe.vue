@@ -37,8 +37,8 @@ const skills = [
           <h2 class="name py-2">
             Saeid Doroudi
           </h2>
-          <p class="py-3 text-justify text-dark">
-            Full Stack Software developer with more than 15 yrs of experience in software industry.<br>
+          <p class="py-3 text-dark">
+            Full Stack Software developer with more than 10 years of experience in software industry.<br>
             Developing Web and service based solutions (specially based on ASP.Net and Web Api) for more than a decade.
             <br>
             Loving implement UI and client side applications and SPA solutions in JavaScript ecosystem, specially in
@@ -88,10 +88,6 @@ const skills = [
 </template>
 
 <style lang="scss" scoped>
-.content {
-  // background: #f3f3f5;
-}
-
 .name {
   font-size: 2.2rem;
   font-weight: bold;
