@@ -80,7 +80,6 @@ export default defineConfig({
 
     // https://github.com/feat-agency/vite-plugin-webfont-dl
     WebfontDownload(),
-
     // https://github.com/webfansplz/vite-plugin-vue-devtools
     VueDevTools(),
   ],
@@ -90,7 +89,7 @@ export default defineConfig({
     script: 'async',
     formatting: 'minify',
     crittersOptions: {
-      reduceInlineStyles: false,  
+      reduceInlineStyles: false,
     },
     onFinished() {
       generateSitemap()
