@@ -32,7 +32,7 @@ export default defineConfig({
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
-      extensions: ['vue', 'md'],
+      extensions: ['vue'],
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -43,7 +43,6 @@ export default defineConfig({
       imports: [
         'vue',
         'vue-router',
-        'vue-i18n',
         '@vueuse/head',
         '@vueuse/core',
       ],
@@ -91,7 +90,7 @@ export default defineConfig({
     script: 'async',
     formatting: 'minify',
     crittersOptions: {
-      reduceInlineStyles: false,
+      reduceInlineStyles: false,  
     },
     onFinished() {
       generateSitemap()
@@ -100,6 +99,6 @@ export default defineConfig({
 
   ssr: {
     // TODO: workaround until they support native ESM
-    noExternal: ['workbox-window', /vue-i18n/],
+    noExternal: ['workbox-window'],
   },
 })

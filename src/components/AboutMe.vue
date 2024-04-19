@@ -24,11 +24,13 @@ const skills = [
 </script>
 
 <template>
-  <section class="section content p-6 md:p-8">
+  <section id="about" class="section content p-6 md:p-8">
     <div class="mx-auto container">
       <div class="flex flex-col pt-4 md:flex-row md:pt-10">
         <div class="author-image w-full flex items-start justify-center p-4 md:w-1/5">
-          <img src="@/assets/images/profile.jpg" alt="سعید درودی saeid doroudi">
+          <div class="image-border">
+            <img src="@/assets/images/profile.jpg" alt="سعید درودی saeid doroudi">
+          </div>
         </div>
         <div>
           <h3 class="bubble">
@@ -111,11 +113,50 @@ const skills = [
   text-align: justify;
 }
 
+.image-border {
+  padding: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  position : relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 77%;
+    background: linear-gradient(60deg, #f7e533, #e5573a, #e33d6b, #84508d, #597fc9, #139eb3, #11a38f, #77c98c);
+    border-radius: 50%;
+    z-index: -1;
+    animation: animated-gradient 2s ease alternate infinite;
+    background-size: 300% 300%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
 .author-image {
   img {
     border-radius: 50%;
-    border: solid 7px #d2e1d2;
+    border: none;
     max-width: 75%;
+
+  }
+
+}
+
+@keyframes animated-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
 </style>

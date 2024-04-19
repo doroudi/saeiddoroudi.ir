@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <a class="scroll-btn">
+  <a class="scroll-btn" href="#about">
     <svg
       xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"
       style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
@@ -17,11 +17,11 @@
 .scroll-btn {
   transform: scale(.95);
   position: fixed;
-  bottom: 300px;
+  bottom: 60px;
   right: calc(50% - 1em);
   z-index: 5000;
-  width: 2em;
-  height: 2em;
+  width: 1.8em;
+  height: 1.8em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,6 +50,8 @@
   .scroll-btn {
     bottom: 100px;
     right: 100px;
+    width:2em;
+    height: 2em;
   }
 }
 

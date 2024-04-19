@@ -21,6 +21,7 @@ defineProps<Props>()
 .title {
     color: #000;
     position: relative;
+    font-size:1.2rem;
     &::after {
         content: '';
         position: absolute;
@@ -28,7 +29,7 @@ defineProps<Props>()
         left: 0;
         height: 4px;
         width: 45px;
-        background: #d2e1d2;
+        background: #4caf50;
 
     }
 }
