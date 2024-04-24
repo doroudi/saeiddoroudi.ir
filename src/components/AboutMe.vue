@@ -65,11 +65,14 @@ const skills = [
             <a class="round-link" href="https://stackoverflow.com/users/5292901/saeid-doroudi" target="_blank">
               <span class="i-mdi:stack-overflow font-size-1.5em" />
             </a>
-            <a class="round-link" href="https://www.linkedin.com/in/saeiddoroudi/" target="_blank">
+            <a class="round-link" href="https://www.linkedin.com/in/doroudi/" target="_blank">
               <span class="i-mdi:linkedin font-size-1.5em" />
             </a>
             <a class="round-link" href="mailto:doroudi@outlook.com" target="_blank">
               <span class="i-mdi:email font-size-1.5em" />
+            </a>
+            <a class="round-link" href="tel:+989101003894" target="_blank">
+              <span class="i-mdi:phone font-size-1.5em" />
             </a>
           </div>
 
