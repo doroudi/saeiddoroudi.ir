@@ -30,6 +30,7 @@ const skills = [
         <div class="author-image w-full flex items-start justify-center p-4 md:w-1/5">
           <div class="image-border">
             <img src="@/assets/images/profile.jpg" alt="سعید درودی saeid doroudi">
+            <div class="open-to-work" />
           </div>
         </div>
         <div>
@@ -40,14 +41,11 @@ const skills = [
             Saeid Doroudi
           </h2>
           <p class="py-3 text-dark">
-            Full Stack Software developer with more than 10 years of experience in software industry.<br>
-            Developing Web and service based solutions (specially based on ASP.Net and Web Api) for more than a decade.
+            I'm a Full Stack Software developer with more than 15 years of experience in software industry,<br>
+            especially in Microsoft .Net ecosystem and Web with experience in both BackEnd and FrontEnd realm.
             <br>
-            Loving implement UI and client side applications and SPA solutions in JavaScript ecosystem, specially in
-            Vue<br>
-            Educated Software architecture and System Designer with hands on experience in various businesses.
-            <br>
-            I'm seeking new job opportunity to learn more and do amazing works, feel free to contact me.
+            Loving implement UI and build client side applications and SPA solutions in Vue and React.<br>
+            I am an educated software engineer who loves to learn new things and face challenges.
           </p>
 
           <div class="center my-4 flex items-center">
@@ -55,16 +53,16 @@ const skills = [
               href="/uploads/Saeid_Doroudi_Resume.pdf"
               class="mx-1 flex items-center border-2 border-green-600 rounded-full bg-transparent p-3 text-sm font-semibold text-green-600 transition duration-300 hover:(border-transparent bg-green-600 text-white) focus:(outline-none ring-2 ring-offset-2 ring-green-600)"
             >
-              Resume
+              Download CV
               <i class="i-mdi:arrow-down ml-2 inline-block" />
             </a>
 
             <a class="round-link" href="https://github.com/doroudi" target="_blank">
               <span class="i-mdi:github font-size-1.5em" />
             </a>
-            <a class="round-link" href="https://stackoverflow.com/users/5292901/saeid-doroudi" target="_blank">
+            <!-- <a class="round-link" href="https://stackoverflow.com/users/5292901/saeid-doroudi" target="_blank">
               <span class="i-mdi:stack-overflow font-size-1.5em" />
-            </a>
+            </a> -->
             <a class="round-link" href="https://www.linkedin.com/in/doroudi/" target="_blank">
               <span class="i-mdi:linkedin font-size-1.5em" />
             </a>
@@ -82,9 +80,8 @@ const skills = [
             </h3>
 
             <div class="mt-4" />
-            <div class="">
-              <Skill v-for="(item, i) of skills" v-bind="item" :key="i" />
-            </div>
+
+            <Skill v-for="(item, i) of skills" v-bind="item" :key="i" />
           </section>
         </div>
       </div>
@@ -120,7 +117,7 @@ const skills = [
   padding: 0.5rem;
   display: inline-flex;
   justify-content: center;
-  position : relative;
+  position: relative;
 
   &::after {
     content: "";
@@ -145,6 +142,14 @@ const skills = [
     border: none;
     max-width: 75%;
 
+  }
+
+  .open-to-work {
+    position: absolute;
+    inset: 2px;
+    z-index:1;
+    background: url('@/assets/images/open-to-work.png') no-repeat center center;
+    background-size: contain;
   }
 
 }
