@@ -15,6 +15,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     ScrollButton: typeof import('./components/ScrollButton.vue')['default']
     Skill: typeof import('./components/Skill.vue')['default']
+    SkillGroup: typeof import('./components/SkillGroup.vue')['default']
     WorkInfo: typeof import('./components/WorkInfo.vue')['default']
   }
 }

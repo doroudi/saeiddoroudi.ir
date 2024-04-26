@@ -2,10 +2,23 @@
 const skills = [
   {
     title: 'FrontEnd',
+    items: [
+      { title: 'JS', percent: 90 },
+      { title: 'TypeScript', percent: 80 },
+      { title: 'VueJs', percent: 95 },
+      { title: 'Nuxt', percent: 80 },
+    ],
     content: 'JavaScript | TypeScript | Vue.js | PWA | React | Ionic | jQuery | HTML | CSS | Angular | Blazor | SSR/SSG | Cypress',
   },
   {
     title: 'BackEnd',
+    items: [
+      { title: 'C#', percent: 90 },
+      { title: 'Asp.Net', percent: 92 },
+      { title: 'SqlServer', percent: 80 },
+      { title: 'OOP', percent: 85 },
+      { title: 'Python', percent: 45 },
+    ],
     content: 'C# | .Net | ASP.Net | OOP | SQL Server | Redis | NoSQL | Testing | RabbitMQ | Kafka | EF Core | MongoDb',
   },
   {
@@ -33,7 +46,7 @@ const skills = [
             <div class="open-to-work" />
           </div>
         </div>
-        <div>
+        <div class="w-full">
           <h3 class="bubble">
             About Me
           </h3>
@@ -50,39 +63,48 @@ const skills = [
 
           <div class="center my-4 flex items-center">
             <a
-              href="/uploads/Saeid_Doroudi_Resume.pdf"
-              class="mx-1 flex items-center border-2 border-green-600 rounded-full bg-transparent p-3 text-sm font-semibold text-green-600 transition duration-300 hover:(border-transparent bg-green-600 text-white) focus:(outline-none ring-2 ring-offset-2 ring-green-600)"
+              title="Download Resume" href="/uploads/Saeid_Doroudi_Resume.pdf" target="_blank"
+              class="mx-1 flex items-center border-2 border-green-600 rounded-full bg-transparent p-2 text-sm font-semibold text-green-600 transition duration-300 hover:(border-transparent bg-green-600 text-white) md:p-3 focus:(outline-none ring-2 ring-offset-2 ring-green-600)"
             >
               Download CV
-              <i class="i-mdi:arrow-down ml-2 inline-block" />
+              <!-- <i class="i-mdi:arrow-down ml-1 inline-block" /> -->
             </a>
 
-            <a class="round-link" href="https://github.com/doroudi" target="_blank">
+            <a title="Github" class="round-link" href="https://github.com/doroudi" target="_blank">
               <span class="i-mdi:github font-size-1.5em" />
             </a>
-            <!-- <a class="round-link" href="https://stackoverflow.com/users/5292901/saeid-doroudi" target="_blank">
+            <!-- <a title="" class="round-link" href="https://stackoverflow.com/users/5292901/saeid-doroudi" target="_blank">
               <span class="i-mdi:stack-overflow font-size-1.5em" />
             </a> -->
-            <a class="round-link" href="https://www.linkedin.com/in/doroudi/" target="_blank">
+            <a title="LinkedIn" class="round-link" href="https://www.linkedin.com/in/doroudi/" target="_blank">
               <span class="i-mdi:linkedin font-size-1.5em" />
             </a>
-            <a class="round-link" href="mailto:doroudi@outlook.com" target="_blank">
+            <a title="Email" class="round-link" href="mailto:doroudi@outlook.com" target="_blank">
               <span class="i-mdi:email font-size-1.5em" />
             </a>
-            <a class="round-link" href="tel:+989101003894" target="_blank">
+            <a title="Call" class="round-link" href="tel:+989101003894" target="_blank">
               <span class="i-mdi:phone font-size-1.5em" />
             </a>
           </div>
 
-          <section class="pb-3 pt-10">
-            <h3 class="bubble">
-              Skills
-            </h3>
+          <section class="grid grid-cols-1 gap-4 pt-6 md:grid-cols-3">
+            <div class="md:col-span-2">
+              <h3 class="bubble">
+                Experiences
+              </h3>
 
-            <div class="mt-4" />
+              <Skill v-for="(item, i) of skills" v-bind="item" :key="i" />
+            </div>
+            <div class="">
+              <h3 class="bubble">
+                Skills
+              </h3>
 
-            <Skill v-for="(item, i) of skills" v-bind="item" :key="i" />
+              <SkillGroup v-for="(item, i) of skills" v-bind="item" :key="i" />
+            </div>
           </section>
+
+          <section class="pb-3 pt-10" />
         </div>
       </div>
     </div>
@@ -147,7 +169,7 @@ const skills = [
   .open-to-work {
     position: absolute;
     inset: 2px;
-    z-index:1;
+    z-index: 1;
     background: url('@/assets/images/open-to-work.png') no-repeat center center;
     background-size: contain;
   }
