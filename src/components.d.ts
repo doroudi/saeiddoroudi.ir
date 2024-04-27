@@ -10,6 +10,7 @@ declare module 'vue' {
     AboutMe: typeof import('./components/AboutMe.vue')['default']
     AuthorName: typeof import('./components/AuthorName.vue')['default']
     DeveloperName: typeof import('./components/DeveloperName.vue')['default']
+    Experience: typeof import('./components/Experience.vue')['default']
     MainSection: typeof import('./components/MainSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

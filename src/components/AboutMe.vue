@@ -16,22 +16,81 @@ const skills = [
       { title: 'C#', percent: 90 },
       { title: 'Asp.Net', percent: 92 },
       { title: 'SqlServer', percent: 80 },
-      { title: 'OOP', percent: 85 },
+      { title: 'RabbitMQ', percent: 75 },
+      { title: 'OOP/Design Patterns', percent: 80 },
       { title: 'Python', percent: 45 },
     ],
     content: 'C# | .Net | ASP.Net | OOP | SQL Server | Redis | NoSQL | Testing | RabbitMQ | Kafka | EF Core | MongoDb',
   },
+
+]
+
+const experiences = [
   {
-    title: 'Software design',
-    content: 'System Design | Clean Architecture | MicroServices | Event Sourcing | CQRS | Agile | Web Security basics | TDD | BDD',
+    period: '2020-Present',
+    company: 'Hyperstar (Majid Al Futtaim)',
+    jobTitle: 'FullStack Developer',
+    description: `
+      Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update all front-end apps to new structure.
+      <br />	Building multiple reuseable VueJs components published as NPM package that used in multiple projects.
+      <br />	Find performance bottlenecks using performance testing, implement test processes for critical business sections.
+      <br />	Building multiple back-office apps for multiple parts of organization to achieve up to 40% cost saving.
+      <br />	Build Customers Loyalty mobile application and lottery that published as PWA web application with more than 300K users.
+      <br />	Build multiple Dashboard applications for different parts of organization using Vue3 and deploy to K8s Cluster.
+
+    `,
   },
   {
-    title: 'Deployment',
-    content: 'DevOps | AzureDevops | Github Actions | Docker | Kubernetes | E2E Testing ',
+    period: '2018-2020',
+    company: 'Mobinnet',
+    jobTitle: 'FullStack Developer',
+    description:
+      `Leading Front-End team and coaching team members and reviewing codes and make technical decisions.
+      <br />Build Mobinnet customers Mobile app (MyMobinnet) using PWA and Asp.Net Core and Vue which responds to more than 70% of requests (More than 500K active users) beside web version after a little while.
+      <br />Implement modem troubleshoot application using Ionic (angular) to help customers to find and fix their internet connectivity issues.
+      <br />Find Performance issues and design new structure for existing eCare System using .Net Core, CQRS, Redis, Kafka, HA Proxy, Azure DevOps witch results in 99.99% uptime system.
+
+    `,
   },
   {
-    title: 'Others',
-    content: 'Ionic | WinForms | WPF | Telegram Bot | Speak in English, Turkish and Persian',
+    period: '2017-2018',
+    company: 'ArtimMehr',
+    jobTitle: 'Mobile Developer',
+    description: `
+      Build shopping mobile app for Balakmarket, SalemMarket  using Ionic for local shopping centers and deploy them to AppStore and PlayStore. <br />
+      Build website for Go2TR company
+    `,
+  },
+  {
+    period: '2017-2018',
+    company: 'Elcaco',
+    jobTitle: 'CoFounder - Senior Developer',
+    description: `
+      Build SMS based Lottery System for Food industry factories and build simpler version for restaurants using Asp.Net and AngularJs.
+      <br />Build TeleHub (Telegram Directory App) Mobile Application and Service and publish it to AppStore and Windows Store.
+      <br />Build Iran Football League Mobile app and publish it to Bazaar and reach thousands active users.
+      <br />Build multiple shopping mobile apps using Ionic for local shopping centers and deploy them to AppStore and PlayStore
+
+    
+    `,
+  },
+
+  {
+    period: '2017-2018',
+    company: '',
+    jobTitle: 'Freelancer Developer',
+    description: `
+      Build Abna-News Agency QA Multilingual website (Asp.Net 4 and MVC).<br />
+      Build Application for managing Tax for municipality of Marand.<br />
+      Build Websites and Applications for BlogSky, IranArmy, Tabriz University, Hoopa and Barayand Publishing, and many other clients.<br />
+      Build ThemeStudio.ir website and sell blog themes and get orders to develop Websites<br />
+    `,
+  },
+  {
+    period: '2017-2018',
+    company: 'Tabriz University of College',
+    jobTitle: 'Bsc Degree',
+    description: 'Bachelor of Software Engineering technologies',
   },
 ]
 </script>
@@ -87,24 +146,25 @@ const skills = [
             </a>
           </div>
 
-          <section class="grid grid-cols-1 gap-4 pt-6 md:grid-cols-3">
+          <section class="grid grid-cols-1 gap-7 pt-6 md:grid-cols-3">
             <div class="md:col-span-2">
               <h3 class="bubble">
                 Experiences
               </h3>
-
-              <Skill v-for="(item, i) of skills" v-bind="item" :key="i" />
+              <div class="pt-8">
+                <Experience v-for="(item, i) of experiences" v-bind="item" :key="i" />
+              </div>
             </div>
             <div class="">
               <h3 class="bubble">
                 Skills
               </h3>
 
-              <SkillGroup v-for="(item, i) of skills" v-bind="item" :key="i" />
+              <div class="pt-2">
+                <SkillGroup v-for="(item, i) of skills" v-bind="item" :key="i" />
+              </div>
             </div>
           </section>
-
-          <section class="pb-3 pt-10" />
         </div>
       </div>
     </div>
