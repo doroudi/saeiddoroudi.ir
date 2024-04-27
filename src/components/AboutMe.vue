@@ -31,12 +31,12 @@ const experiences = [
     company: 'Hyperstar (Majid Al Futtaim)',
     jobTitle: 'FullStack Developer',
     description: `
-      Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update all front-end apps to new structure.
-      <br />	Building multiple reuseable VueJs components published as NPM package that used in multiple projects.
-      <br />	Find performance bottlenecks using performance testing, implement test processes for critical business sections.
-      <br />	Building multiple back-office apps for multiple parts of organization to achieve up to 40% cost saving.
-      <br />	Build Customers Loyalty mobile application and lottery that published as PWA web application with more than 300K users.
-      <br />	Build multiple Dashboard applications for different parts of organization using Vue3 and deploy to K8s Cluster.
+Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update all front-end apps to new structure.
+<br />Building multiple reuseable VueJs components published as NPM package that used in multiple projects.
+<br />Find performance bottlenecks using performance testing, implement test processes for critical business sections.
+<br />Building multiple back-office apps for multiple parts of organization to achieve up to 40% cost saving.
+<br />Build Customers Loyalty mobile application and lottery that published as PWA web application with more than 300K users.
+<br />Build multiple Dashboard applications for different parts of organization using Vue3 and deploy to K8s Cluster.
 
     `,
   },
