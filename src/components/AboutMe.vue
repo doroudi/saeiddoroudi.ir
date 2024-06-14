@@ -33,12 +33,11 @@ const experiences = [
     company: { name: 'Hyperstar (Majid Al Futtaim)', url: 'https://www.majidalfuttaim.com/' },
     jobTitle: 'FullStack Developer',
     description: `
-Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update all front-end apps to new structure.
-<br />Building multiple reuseable VueJs components published as NPM package that used in multiple projects.
-<br />Find performance bottlenecks using performance testing, implement test processes for critical business sections.
-<br />Building multiple back-office apps for multiple parts of organization to achieve up to 40% cost saving.
-<br />Build Customers Loyalty mobile application and lottery that published as PWA web application with more than 300K users.
+Implement Multiple BackOffice Microservices based on .Net, create communication between services using RabbitMQ.
+<br />Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update all front-end apps to new structure.
 <br />Build multiple Dashboard applications for different parts of organization using Vue3 and deploy to K8s Cluster.
+<br />Find performance bottlenecks using performance testing, implement test processes for critical business sections.
+<br />Building multiple reuseable VueJs components published as NPM package that used in multiple projects.
 
     `,
   },
@@ -48,9 +47,9 @@ Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update 
     jobTitle: 'FullStack Developer',
     description:
       `Leading Front-End team and coaching team members and reviewing codes and make technical decisions.
+      <br />Design new structure for existing eCare System using .Net Core, CQRS, Redis, Kafka, HA Proxy, Azure DevOps witch results in 99.99% uptime system.
       <br />Build Mobinnet customers Mobile app (MyMobinnet) using PWA and Asp.Net Core and Vue which responds to more than 70% of requests (More than 500K active users) beside web version after a little while.
       <br />Implement modem troubleshoot application using Ionic (angular) to help customers to find and fix their internet connectivity issues.
-      <br />Find Performance issues and design new structure for existing eCare System using .Net Core, CQRS, Redis, Kafka, HA Proxy, Azure DevOps witch results in 99.99% uptime system.
 
     `,
   },
@@ -67,7 +66,7 @@ Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update 
     `,
   },
   {
-    period: '2017-2018',
+    period: '2013-2017',
     company: { name: 'Elcaco', url: 'https://elcaco.ir' },
     jobTitle: 'CoFounder - Senior Developer',
     description: `
@@ -75,13 +74,10 @@ Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update 
       <br />Build TeleHub (Telegram Directory App) Mobile Application and Service and publish it to AppStore and Windows Store.
       <br />Build Iran Football League Mobile app and publish it to Bazaar and reach thousands active users.
       <br />Build multiple shopping mobile apps using Ionic for local shopping centers and deploy them to AppStore and PlayStore
-
-    
     `,
   },
-
   {
-    period: '2017-2018',
+    period: '2007-2011',
     company: { name: '' },
     jobTitle: 'Freelancer Developer',
     description: `
@@ -92,7 +88,7 @@ Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update 
     `,
   },
   {
-    period: '2017-2018',
+    period: '2009-2011',
     company: { name: 'Tabriz University of College' },
     jobTitle: 'Bsc Degree',
     description: 'Bachelor of Software Engineering technologies',
@@ -114,9 +110,9 @@ Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update 
           <h3 class="bubble">
             About Me
           </h3>
-          <h2 class="name py-2">
+          <h1 class="name py-2">
             Saeid Doroudi
-          </h2>
+          </h1>
           <p class="py-3 text-dark">
             I'm a Full Stack Software developer with more than 15 years of experience in software industry,<br>
             especially in Microsoft .Net ecosystem and Web with experience in both BackEnd and FrontEnd realm.

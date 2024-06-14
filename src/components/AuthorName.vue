@@ -30,9 +30,9 @@ onMounted(() => {
 
 <template>
   <div class="author-name">
-    <h1 class="main-title">
+    <h2 class="main-title">
       I'm SAEID<br>DOROUDI
-    </h1>
+    </h2>
     <h2 class="introduce">
       I'm: <span id="description" />
     </h2>
