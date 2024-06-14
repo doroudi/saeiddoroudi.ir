@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{ period: string, company: string, jobTitle: string, description: string }>()
+defineProps<{ period: string, company: { name: string, url?: string }, jobTitle: string, description: string }>()
 </script>
 
 <template>
@@ -8,7 +8,7 @@ defineProps<{ period: string, company: string, jobTitle: string, description: st
       <h5 class="period text-sm text-dark">
         {{ period }}
       </h5>
-      <span class="company text-sm font-700 text-gray-5">{{ company }}</span>
+      <a :href="company.url ?? '#'" :title="company.name" target="_blank" class="company text-sm font-700 text-gray-5 hover:text-gray-700">{{ company.name }}</a>
     </div>
     <div class="divider" />
     <div class="right">

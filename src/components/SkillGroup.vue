@@ -28,17 +28,6 @@ defineProps<Props>()
   color: #000;
   position: relative;
   font-size: 1.2rem;
-
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   bottom: -4px;
-  //   left: 0;
-  //   height: 4px;
-  //   width: 45px;
-  //   background: var(--secondary);
-
-  // }
 }
 
 .skill-container {
@@ -63,11 +52,5 @@ defineProps<Props>()
     height: 6px;
     padding: 0;
   }
-
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   background-color: #4caf50;
-  // }
 }
 </style>

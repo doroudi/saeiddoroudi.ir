@@ -1,34 +1,36 @@
 <script setup>
 const skills = [
   {
-    title: 'FrontEnd',
-    items: [
-      { title: 'JS', percent: 90 },
-      { title: 'TypeScript', percent: 80 },
-      { title: 'VueJs', percent: 95 },
-      { title: 'Nuxt', percent: 80 },
-    ],
-    content: 'JavaScript | TypeScript | Vue.js | PWA | React | Ionic | jQuery | HTML | CSS | Angular | Blazor | SSR/SSG | Cypress',
-  },
-  {
     title: 'BackEnd',
     items: [
-      { title: 'C#', percent: 90 },
-      { title: 'Asp.Net', percent: 92 },
+      { title: '.Net', percent: 92 },
+      { title: 'Microservices', percent: 85 },
       { title: 'SqlServer', percent: 80 },
       { title: 'RabbitMQ', percent: 75 },
       { title: 'OOP/Design Patterns', percent: 80 },
-      { title: 'Python', percent: 45 },
+      { title: 'Testing', percent: 80 },
+      { title: 'NoSql', percent: 70 },
     ],
     content: 'C# | .Net | ASP.Net | OOP | SQL Server | Redis | NoSQL | Testing | RabbitMQ | Kafka | EF Core | MongoDb',
   },
-
+  {
+    title: 'FrontEnd',
+    items: [
+      { title: 'JS/TS', percent: 85 },
+      { title: 'VueJs', percent: 95 },
+      { title: 'Nuxt', percent: 80 },
+      { title: 'Ionic', percent: 80 },
+      { title: 'Angular', percent: 70 },
+      { title: 'React', percent: 60 },
+    ],
+    content: 'JavaScript | TypeScript | Vue.js | PWA | React | Ionic | jQuery | HTML | CSS | Angular | Blazor | SSR/SSG | Cypress',
+  },
 ]
 
 const experiences = [
   {
     period: '2020-Present',
-    company: 'Hyperstar (Majid Al Futtaim)',
+    company: { name: 'Hyperstar (Majid Al Futtaim)', url: 'https://www.majidalfuttaim.com/' },
     jobTitle: 'FullStack Developer',
     description: `
 Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update all front-end apps to new structure.
@@ -42,7 +44,7 @@ Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update 
   },
   {
     period: '2018-2020',
-    company: 'Mobinnet',
+    company: { name: 'Mobinnet', url: 'https://mobinnet.ir' },
     jobTitle: 'FullStack Developer',
     description:
       `Leading Front-End team and coaching team members and reviewing codes and make technical decisions.
@@ -54,7 +56,10 @@ Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update 
   },
   {
     period: '2017-2018',
-    company: 'ArtimMehr',
+    company: {
+      name: 'ArtimMehr',
+      url: 'https://artinmehr.com/',
+    },
     jobTitle: 'Mobile Developer',
     description: `
       Build shopping mobile app for Balakmarket, SalemMarket  using Ionic for local shopping centers and deploy them to AppStore and PlayStore. <br />
@@ -63,7 +68,7 @@ Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update 
   },
   {
     period: '2017-2018',
-    company: 'Elcaco',
+    company: { name: 'Elcaco', url: 'https://elcaco.ir' },
     jobTitle: 'CoFounder - Senior Developer',
     description: `
       Build SMS based Lottery System for Food industry factories and build simpler version for restaurants using Asp.Net and AngularJs.
@@ -77,7 +82,7 @@ Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update 
 
   {
     period: '2017-2018',
-    company: '',
+    company: { name: '' },
     jobTitle: 'Freelancer Developer',
     description: `
       Build Abna-News Agency QA Multilingual website (Asp.Net 4 and MVC).<br />
@@ -88,7 +93,7 @@ Implement new Front-End infrastructure using Vue.Js 3 and TypeScript and update 
   },
   {
     period: '2017-2018',
-    company: 'Tabriz University of College',
+    company: { name: 'Tabriz University of College' },
     jobTitle: 'Bsc Degree',
     description: 'Bachelor of Software Engineering technologies',
   },
