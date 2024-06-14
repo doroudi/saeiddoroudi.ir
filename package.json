@@ -1,6 +1,7 @@
 {
   "type": "module",
   "private": true,
+  "packageManager": "pnpm@9.1.0",
   "scripts": {
     "build": "vite-ssg build",
     "dev": "vite --port 3333 --open",
