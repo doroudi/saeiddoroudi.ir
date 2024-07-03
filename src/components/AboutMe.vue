@@ -103,7 +103,7 @@ Implement Multiple BackOffice Microservices based on .Net, create communication 
         <div class="author-image w-full flex items-start justify-center p-4 md:w-1/5">
           <div class="image-border">
             <img src="@/assets/images/profile.jpg" alt="سعید درودی saeid doroudi">
-            <div class="open-to-work" />
+            <!-- <div class="open-to-work" /> -->
           </div>
         </div>
         <div class="w-full">
