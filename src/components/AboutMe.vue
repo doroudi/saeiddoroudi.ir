@@ -29,7 +29,15 @@ const skills = [
 
 const experiences = [
   {
-    period: '2020-Present',
+    period: '2024-Present',
+    company: { name: 'NextTopTech', url: 'https://nexttoptech.org' },
+    jobTitle: 'Senior Backend Developer',
+    description: `
+      Work as developer in TCPay team, develop and maintain Exchange application, migrating legacy codebase to microservice architecture
+    `,
+  },
+  {
+    period: '2020-2024',
     company: { name: 'Hyperstar (Majid Al Futtaim)', url: 'https://www.majidalfuttaim.com/' },
     jobTitle: 'FullStack Developer',
     description: `
