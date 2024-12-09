@@ -4,7 +4,7 @@ const skills = [
     title: 'BackEnd',
     items: [
       { title: '.Net', percent: 92 },
-      { title: 'Microservices', percent: 85 },
+      { title: 'Microservices', percent: 80 },
       { title: 'SqlServer', percent: 80 },
       { title: 'RabbitMQ', percent: 75 },
       { title: 'OOP/Design Patterns', percent: 80 },
@@ -18,7 +18,6 @@ const skills = [
     items: [
       { title: 'JS/TS', percent: 85 },
       { title: 'VueJs', percent: 95 },
-      { title: 'Nuxt', percent: 80 },
       { title: 'Ionic', percent: 80 },
       { title: 'Angular', percent: 70 },
       { title: 'React', percent: 60 },
@@ -33,7 +32,7 @@ const experiences = [
     company: { name: 'NextTopTech', url: 'https://nexttoptech.org' },
     jobTitle: 'Senior Backend Developer',
     description: `
-      Work as developer in TCPay team, develop and maintain Exchange application, migrating legacy codebase to microservice architecture
+      Work as developer in TopChange team, develop and maintain Exchange application, migrating legacy codebase to microservice architecture
     `,
   },
   {
@@ -89,7 +88,7 @@ Implement Multiple BackOffice Microservices based on .Net, create communication 
     company: { name: '' },
     jobTitle: 'Freelancer Developer',
     description: `
-      Build Abna-News Agency QA Multilingual website (Asp.Net 4 and MVC).<br />
+      Build News Agency Multilingual website (Asp.Net 4 and MVC).<br />
       Build Application for managing Tax for municipality of Marand.<br />
       Build Websites and Applications for BlogSky, IranArmy, Tabriz University, Hoopa and Barayand Publishing, and many other clients.<br />
       Build ThemeStudio.ir website and sell blog themes and get orders to develop Websites<br />
@@ -111,7 +110,7 @@ Implement Multiple BackOffice Microservices based on .Net, create communication 
         <div class="author-image w-full flex items-start justify-center p-4 md:w-1/5">
           <div class="image-border">
             <img src="@/assets/images/profile.jpg" alt="سعید درودی saeid doroudi">
-            <!-- <div class="open-to-work" /> -->
+            <div class="open-to-work" />
           </div>
         </div>
         <div class="w-full">
@@ -135,15 +134,14 @@ Implement Multiple BackOffice Microservices based on .Net, create communication 
               class="mx-1 flex items-center border-2 border-green-600 rounded-full bg-transparent p-2 text-sm font-semibold text-green-600 transition duration-300 hover:(border-transparent bg-green-600 text-white) md:p-3 focus:(outline-none ring-2 ring-offset-2 ring-green-600)"
             >
               Download CV
-              <!-- <i class="i-mdi:arrow-down ml-1 inline-block" /> -->
             </a>
 
             <a title="Github" class="round-link" href="https://github.com/doroudi" target="_blank">
               <span class="i-mdi:github font-size-1.5em" />
             </a>
-            <!-- <a title="" class="round-link" href="https://stackoverflow.com/users/5292901/saeid-doroudi" target="_blank">
+            <a title="" class="hidden round-link md:inline-flex" href="https://stackoverflow.com/users/5292901/saeid-doroudi" target="_blank">
               <span class="i-mdi:stack-overflow font-size-1.5em" />
-            </a> -->
+            </a>
             <a title="LinkedIn" class="round-link" href="https://www.linkedin.com/in/doroudi/" target="_blank">
               <span class="i-mdi:linkedin font-size-1.5em" />
             </a>
