@@ -1,22 +1,22 @@
 [
 	{
-		"dates": "June 2018 · Present",
-		"role": "Front-end Engineer",
-		"company": "Full Truck Alliance",
-		"description": "Responsible for customer service and CRM system front-end development.",
+		"dates": "June 2024 · Present",
+		"role": "Senior Backend Engineer",
+		"company": "Next Top Tech - Fintech",
+		"description": "Responsible to migrate legacy .NetFramework system to Microservices architecture based on .Net8 and implementing new features (RabbitMQ, Redis, SqlServer, etc).",
 		"logo": "/assets/images/experiences/fta.ico"
 	},
 	{
 		"dates": "July 2015 · June 2018",
-		"role": "Front-end Engineer",
-		"company": "YOHO!",
-		"description": "Responsible for mobile front-end development of e-commerce platform.",
+		"role": "FullStack Developer",
+		"company": "MajidAlFuttaim (Hyperstar) - Retail",
+		"description": "Developed and maintained the company's e-commerce platform, including the website and mobile applications.Architecture frontend framework.(.Net, Vue, Rabbit, SqlServer, Azure DevOps)",
 		"logo": "/assets/images/experiences/yoho.ico"
 	},
 	{
 		"dates": "September 2014 · July 2015 ",
-		"role": "Node.JS Developer",
-		"company": "WuLian",
+		"role": "FullStack Developer",
+		"company": "Mobinnet - ISP",
 		"description": "Intern, involved in the development of Internet of Things cloud systems.",
 		"logo": "/assets/images/experiences/wulian.ico"
 	}
