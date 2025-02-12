@@ -3,22 +3,20 @@ import Button from "../button.astro";
 import SVGMask from "../custom-components/svg-mask.vue";
 ---
 
-
-    <SVGMask client:only class="h-[40rem] rounded-md">
-      <template id="base">
-        The first rule of <span class="text-red-500">MRR Club</span> is you do not
-        talk about MRR Club. The second rule of MRR Club is you DO NOT talk about
-        <span class="text-red-500">MRR Club</span>.
-      </template>
-      <template id="reveal">
-        <p
-          class="mx-auto max-w-4xl text-center text-4xl font-bold text-slate-800"
-        >
-          The first rule of MRR Club is you do not talk about MRR Club. The
-          second rule of MRR Club is you DO NOT talk about MRR Club.
-        </p>
-      </template>
-    </SVGMask>
+<SVGMask client:only class="h-[45rem]">
+  <div slot="base">
+       Hi👋 I'm <span class="text-cyan-500">Saeid Doroudi</span><br
+    />
+    FullStack Web developer with focus on the <span class="text-indigo-500 font-bold">.Net</span
+    >
+  </div>
+  <div slot="reveal">
+    <p class="mx-auto max-w-4xl text-center text-4xl font-bold text-slate-800">
+      Hi👋 I'm Saeid Doroudi<br />
+      FullStack Web developer with focus on the .Net
+    </p>
+  </div>
+</SVGMask>
 
 <!-- <div
   class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
