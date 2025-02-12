@@ -1,12 +1,30 @@
 ---
 import Button from "../button.astro";
-
+import SVGMask from "../custom-components/svg-mask.vue";
 ---
 
-<div
+
+    <SVGMask client:only class="h-[40rem] rounded-md">
+      <template id="base">
+        The first rule of <span class="text-red-500">MRR Club</span> is you do not
+        talk about MRR Club. The second rule of MRR Club is you DO NOT talk about
+        <span class="text-red-500">MRR Club</span>.
+      </template>
+      <template id="reveal">
+        <p
+          class="mx-auto max-w-4xl text-center text-4xl font-bold text-slate-800"
+        >
+          The first rule of MRR Club is you do not talk about MRR Club. The
+          second rule of MRR Club is you DO NOT talk about MRR Club.
+        </p>
+      </template>
+    </SVGMask>
+
+<!-- <div
   class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
 >
   <div class="flex flex-col items-center md:flex-row">
+    
     <div class="relative w-full md:w-1/2">
       <h1
         class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
@@ -64,3 +82,4 @@ import Button from "../button.astro";
     </div>
   </div>
 </div>
+-->
