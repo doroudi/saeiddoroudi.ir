@@ -1,0 +1,50 @@
+---
+import IconCloud from "../components/custom-components/icon-cloud.vue";
+
+const slugs = [
+  "dotnet",
+  "typescript",
+  "javascript",
+  "nuget",
+  "blazor",
+  "flutter",
+  "apachekafka",
+  "vuedotjs",
+  "html5",
+  "css",
+  "redis",
+  "eventstore",
+  "ollama",
+  "kubernetes",
+  "postgresql",
+  "rabbitmq",
+  "pwa",
+  "vite",
+  "elastic",
+  "cypress",
+  "docker",
+  "git",
+  "graphql",
+  "github",
+  "electron",
+  "webassembly",
+  "ionic",
+  "angular",
+  "mongodb",
+  "tailwindcss",
+];
+
+const imageUrls = slugs.map(
+  (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
+);
+---
+
+<div
+  class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
+>
+  <div class="flex flex-col items-center md:flex-row">
+    <div class="relative w-full md:w-1/2">
+      <IconCloud client:only images={imageUrls} />
+    </div>
+  </div>
+</div>

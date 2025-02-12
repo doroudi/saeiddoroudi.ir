@@ -19,5 +19,11 @@
 		"tailwindcss": "^3.4.3",
 		"typescript": "^5.4.5"
 	},
-	"packageManager": "pnpm@9.12.2"
+	"packageManager": "pnpm@9.12.2",
+	"dependencies": {
+		"@astrojs/vue": "^5.0.6",
+		"clsx": "^2.1.1",
+		"tailwind-merge": "^3.0.1",
+		"vue": "^3.5.13"
+	}
 }
