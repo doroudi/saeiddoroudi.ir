@@ -1,33 +1,45 @@
 
 
 <script lang="ts" setup>
-import { computed, defineProps, ref, withDefaults, type HTMLAttributes } from "vue";
+import {
+	type HTMLAttributes,
+	computed,
+	defineProps,
+	ref,
+	withDefaults,
+} from "vue";
 import { cn } from "../../libs/utils";
 
 interface Props {
-  class?: HTMLAttributes["class"];
-  size?: number;
-  revealSize?: number;
+	class?: HTMLAttributes["class"];
+	size?: number;
+	revealSize?: number;
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  size: 12,
-  revealSize: 300,
+	size: 12,
+	revealSize: 300,
 });
 
 const isHovered = ref(false);
 const svgMaskContainerRef = ref<HTMLDivElement>();
-const mousePosition = ref<{ x: null | number; y: null | number }>({ x: null, y: null });
+const mousePosition = ref<{ x: null | number; y: null | number }>({
+	x: null,
+	y: null,
+});
 
 const maskSize = computed(() => {
-  return isHovered.value ? props.revealSize : props.size;
+	return isHovered.value ? props.revealSize : props.size;
 });
 
 function updateMousePosition(event: MouseEvent) {
-  if (!svgMaskContainerRef.value) return;
+	if (!svgMaskContainerRef.value) return;
 
-  const rect = svgMaskContainerRef.value.getBoundingClientRect();
-  mousePosition.value = { x: event.clientX - rect.left, y: event.clientY - rect.top };
+	const rect = svgMaskContainerRef.value.getBoundingClientRect();
+	mousePosition.value = {
+		x: event.clientX - rect.left,
+		y: event.clientY - rect.top,
+	};
 }
 </script>
 
