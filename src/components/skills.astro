@@ -1,0 +1,69 @@
+---
+import IconCloud from "../components/custom-components/icon-cloud.vue";
+
+const slugs = [
+	"dotnet",
+	"typescript",
+	"javascript",
+	"nuget",
+	"blazor",
+	"vuedotjs",
+	"html5",
+	"css",
+	"redis",
+	"eventstore",
+	"postgresql",
+	"rabbitmq",
+	"pwa",
+	"vite",
+	"elastic",
+	"cypress",
+	"docker",
+	"git",
+	"github",
+	"ionic",
+	"angular",
+	"mongodb",
+	"tailwindcss",
+];
+
+const imageUrls = slugs.map(
+	(slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+);
+---
+
+<div
+  class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
+>
+  <div class="flex flex-col items-center md:flex-row">
+    <div class="relative w-full md:w-1/2">
+      <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
+        I have worked as a software developer more than 15 years and I have
+        experience in build production software using:
+      </p>
+      <ul
+        class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
+      >
+        <li>.Net Based Web and desktop applications</li>
+        <li>Building Microservices based on .Net,Rabbitmq,Kafka,..</li>
+        <li>Designing software systems (monolith, distributed, ..)</li>
+        <li>Frontend development using Vue.js, Blazor, Angular</li>
+        <li>Designing databases using SqlServer, Postgresql, Redis, MongoDb</li>
+        <li>Mobile app development using Ionic, Flutter</li>
+        <li>Build CI/CD pipelines using Azure and Github</li>
+        <li>Testing software using xUnit,Cypress,Vitest,Playwright,...</li>
+        <li>Programming in languages: C#, F#, Javascript, Typescript, Dart,..</li>
+      </ul>
+      <!-- <Button text="Follow me on 𝕏" link="https://x.com/0xKaiBi" /> -->
+    </div>
+    <div
+      class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
+    >
+      <div class="relative z-50 w-full">
+        <div class="relative z-30">
+          <IconCloud client:only images={imageUrls} />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

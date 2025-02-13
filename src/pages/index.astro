@@ -1,0 +1,18 @@
+---
+import Home from "../components/home/home.astro";
+import Projects from "../components/home/projects.astro";
+import Separator from "../components/home/separator.astro";
+import Writings from "../components/home/writings.astro";
+import Skills from "../components/skills.astro";
+import Layout from "../layouts/main.astro";
+---
+
+<Layout title="Saeid Doroudi">
+  <Home />
+  <Separator text="Skills" />
+  <Skills />
+  <Separator text="Check out my projects" />
+  <Projects />
+  <Separator text="Some of my writing" />
+  <Writings />
+</Layout>

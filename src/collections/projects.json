@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Yummy Admin",
+		"description": "Free VueJs admin panel.",
+		"image": "/assets/images/projects/yummy-admin.png",
+		"url": "https://yummy-admin.netlify.app"
+	},
+	{
+		"name": "ConsoleR",
+		"description": "Utility library to build awesome Console apps in .Net",
+		"image": "/assets/images/projects/consoler.png",
+		"url": "https://www.nuget.org/packages/Doroudi.ConsoleR/"
+	},
+	{
+		"name": "YummyExcelMapper",
+		"description": "Mapping excel to .net objects for import and export",
+		"image": "/assets/images/projects/yummy-excel-mapper.png",
+		"url": ""
+	}
+]
