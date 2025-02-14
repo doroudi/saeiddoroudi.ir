@@ -1,5 +1,5 @@
 ---
-import Button from "../button.astro";
+import IntractiveButton from "../custom-components/interactive-button.vue";
 import PostsLoop from "../posts-loop.astro";
 
 const feed = "https://feed.saeiddoroudi.ir/";
@@ -24,7 +24,7 @@ const feed = "https://feed.saeiddoroudi.ir/";
         <PostsLoop count="3" />
 
         <div class="flex items-center justify-center w-full py-5">
-          <Button text="View All My Blog Posts" link="/posts" />
+          <IntractiveButton class="w-60" text="View All My Blog Posts" link="/posts" />
         </div>
       </div>
       <div class="w-full mt-10 md:w-1/3 md:mt-0">

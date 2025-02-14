@@ -1,6 +1,6 @@
 ---
 import projects from "../../collections/projects.json";
-import Button from "../button.astro";
+import IntractiveButton from "../custom-components/interactive-button.vue";
 import Project from "../project.astro";
 ---
 
@@ -32,6 +32,6 @@ import Project from "../project.astro";
   </div>
 
   <div class="flex items-center justify-center w-full py-5">
-    <Button text="View All My Projects" link="/projects" />
+    <IntractiveButton class="w-60" text="View All My Projects" link="/projects" />
   </div>
 </section>

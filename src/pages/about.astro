@@ -1,7 +1,8 @@
 ---
 import experiences from "../collections/experiences.json";
 import AboutExperience from "../components/about-experience.astro";
-import Button from "../components/button.astro";
+// import Button from "../components/button.astro";
+import IntractiveButton from "../components/custom-components/interactive-button.vue";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
 ---
@@ -47,9 +48,10 @@ import Layout from "../layouts/main.astro";
           );
         })
       }
-      <Button
+      <IntractiveButton
         text="Download Resume"
-        link="/assets/files/Saeid_Doroudi_Resume.pdf"
+        class="w-56"
+        link='/assets/files/Saeid_Doroudi_Resume.pdf'
       />
       <h2
         class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
