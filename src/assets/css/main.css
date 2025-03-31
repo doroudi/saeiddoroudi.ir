@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 /* Add Your Custom CSS Here */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 0% 98%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+}
 
 .prose img {
   border-radius: 30px;
