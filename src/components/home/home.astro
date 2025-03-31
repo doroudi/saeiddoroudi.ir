@@ -1,6 +1,6 @@
 ---
 import SVGMask from "../custom-components/svg-mask.vue";
-import InteractiveGridPattern from "../custom-components/InteractiveGridPattern.vue";
+import BlurReveal from "../custom-components/blur-reveal.vue";
 import PatternBackground from "../custom-components/PatternBackground.vue";
 
 import {
@@ -20,21 +20,47 @@ import {
     slot="content"
     class="flex flex-col items-center justify-center w-full h-full"
   >
- <SVGMask client:only size={8} revealSize={150} class="h-[38rem]">
-      <div slot="base" class="text-white dark:text-black">
-        Hi👋 I'm <span class="text-cyan-500">Saeid Doroudi</span><br />
-        FullStack developer with focus on the <span
-          class="text-indigo-500 font-bold">.Net</span
-        >
-      </div>
-      <div slot="reveal">
-        <p
-          class="mx-auto max-w-4xl text-center text-4xl font-bold text-black dark:text-white"
-        >
-          Hi👋 I'm Saeid Doroudi<br />
-          FullStack developer with focus on the .Net
-        </p>
-      </div>
-    </SVGMask>
+    <BlurReveal client:only :delay="0.2" :duration="0.75" class="p-8">
+      <SVGMask client:only size={8} revealSize={150} class="h-[38rem]">
+        <div slot="base" class="font-bold text-white dark:text-black">
+          <h2 text-3xl font-bold tracking-tighter xl:text-6xl sm:text-5xl>
+            Hi👋 I'm <span class="text-cyan-500">Saeid Doroudi</span>
+          </h2>
+          <p class="text-4xl">
+            FullStack developer with focus on the <span
+              class="text-indigo-500
+            font-bold"
+            >
+              .Net
+            </span>
+          </p>
+        </div>
+        <div slot="reveal" class="font-bold text-black dark:text-white">
+          <h2
+            class="text-3xl font-bold tracking-tighter xl:text-6xl sm:text-5xl"
+          >
+            Hi👋 I'm Saeid Doroudi
+          </h2>
+          <p class="text-4xl">FullStack developer with focus on the .Net</p>
+        </div>
+      </SVGMask>
+    </BlurReveal>
+    <!-- <h2
+        class="
+              text-3xl
+              font-bold
+              tracking-tighter
+              xl:text-6xl
+              none
+              sm:text-5xl"
+            >
+              Hi👋, I'm Saeid Doroudi.
+            </p>
+            <span
+              class="text-pretty text-xl tracking-tighter xl:text-4xl/none sm:text-3xl"
+            >
+              How is it going?
+            </span> -->
   </div>
+  <!--  -->
 </PatternBackground>
