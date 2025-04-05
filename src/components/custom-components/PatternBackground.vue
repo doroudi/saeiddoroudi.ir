@@ -1,24 +1,23 @@
 <script setup lang="ts">
-import { cn } from "../../libs/utils";
-import type { BaseProps as Props } from ".";
-import {
-  PATTERN_BACKGROUND_DIRECTION,
-  PATTERN_BACKGROUND_SPEED,
-  PATTERN_BACKGROUND_VARIANT,
-  patternBackgroundMaskVariants,
-  patternBackgroundVariants,
-} from "./index";
 import { computed } from "vue";
+import type { BaseProps as Props } from ".";
+import { cn } from "../../libs/utils";
+import {
+	PATTERN_BACKGROUND_DIRECTION,
+	PATTERN_BACKGROUND_SPEED,
+	PATTERN_BACKGROUND_VARIANT,
+	patternBackgroundMaskVariants,
+	patternBackgroundVariants,
+} from "./index";
 
 const props = withDefaults(defineProps<Props>(), {
-  direction: () => PATTERN_BACKGROUND_DIRECTION.TopLeft,
-  variant: () => PATTERN_BACKGROUND_VARIANT.Dot,
-  speed: () => PATTERN_BACKGROUND_SPEED.Slow,
-  size: undefined,
-  mask: undefined,
-  animate: () => true
+	direction: () => PATTERN_BACKGROUND_DIRECTION.TopLeft,
+	variant: () => PATTERN_BACKGROUND_VARIANT.Dot,
+	speed: () => PATTERN_BACKGROUND_SPEED.Slow,
+	size: undefined,
+	mask: undefined,
+	animate: () => true,
 });
-
 
 const durationFormSpeed = computed(() => `${props.speed}ms`);
 </script>

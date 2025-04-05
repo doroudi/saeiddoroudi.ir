@@ -53,9 +53,9 @@ function updateMousePosition(event: MouseEvent) {
                 }px`,
             transition: 'mask-size 0.2s ease-in-out',
         }"
-            class="absolute flex size-full items-center justify-center bg-black dark:bg-white text-6xl text-black dark:text-white bg-grid-white/[0.2] [mask-image:url(/assets/images/mask.svg)] [mask-repeat:no-repeat] [mask-size:40px]">
+            class="absolute flex size-full items-center justify-center bg-black dark:bg-white text-black dark:text-white bg-grid-white/[0.2] [mask-image:url(/assets/images/mask.svg)] [mask-repeat:no-repeat] [mask-size:40px]">
             <div class="absolute inset-0 z-0 size-full bg-black dark:bg-white  opacity-50"></div>
-            <div class="relative z-20 mx-auto max-w-4xl text-center text-4xl font-bold"
+            <div class="relative z-20 mx-auto max-w-4xl"
                 :onmouseenter="() => (isHovered = true)" :onmouseleave="() => (isHovered = false)">
                 <slot name="base"></slot>
             </div>

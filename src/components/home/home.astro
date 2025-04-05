@@ -1,14 +1,7 @@
 ---
-import SVGMask from "../custom-components/svg-mask.vue";
-import BlurReveal from "../custom-components/blur-reveal.vue";
 import PatternBackground from "../custom-components/PatternBackground.vue";
-
-import {
-  PATTERN_BACKGROUND_DIRECTION,
-  PATTERN_BACKGROUND_SPEED,
-  PATTERN_BACKGROUND_VARIANT,
-  PATTERN_BACKGROUND_MASK,
-} from "../custom-components";
+import BlurReveal from "../custom-components/blur-reveal.vue";
+import SVGMask from "../custom-components/svg-mask.vue";
 ---
 
 <PatternBackground
@@ -20,47 +13,36 @@ import {
     slot="content"
     class="flex flex-col items-center justify-center w-full h-full"
   >
-    <BlurReveal client:only :delay="0.2" :duration="0.75" class="p-8">
+    <BlurReveal client:only :delay="0.2" :duration="0.75" class="w-full p-8">
       <SVGMask client:only size={8} revealSize={150} class="h-[38rem]">
-        <div slot="base" class="font-bold text-white dark:text-black">
-          <h2 text-3xl font-bold tracking-tighter xl:text-6xl sm:text-5xl>
-            Hi👋 I'm <span class="text-cyan-500">Saeid Doroudi</span>
-          </h2>
-          <p class="text-4xl">
-            FullStack developer with focus on the <span
-              class="text-indigo-500
-            font-bold"
-            >
-              .Net
-            </span>
-          </p>
-        </div>
-        <div slot="reveal" class="font-bold text-black dark:text-white">
+        <div
+          slot="base"
+          class="text-white dark:text-black text-start user-select-none"
+        >
           <h2
             class="text-3xl font-bold tracking-tighter xl:text-6xl sm:text-5xl"
           >
-            Hi👋 I'm Saeid Doroudi
+            Hi👋 I'm <span class="text-emerald-500">Saeid Doroudi</span>
           </h2>
-          <p class="text-4xl">FullStack developer with focus on the .Net</p>
+          <p class="text-3xl xl:text-4xl sm:text-3xl pt-3">
+            FullStack developer with focus on the
+            <span class="text-indigo-500">.Net</span>
+          </p>
+        </div>
+        <div
+          slot="reveal"
+          class="text-black dark:text-white text-start user-select-none"
+        >
+          <h2
+            class="text-3xl font-bold tracking-tighter xl:text-6xl sm:text-5xl"
+          >
+            Hi👋 I'm <span>Saeid Doroudi</span>
+          </h2>
+          <p class="text-3xl xl:text-4xl sm:text-3xl pt-3">
+            FullStack developer with focus on the .Net
+          </p>
         </div>
       </SVGMask>
     </BlurReveal>
-    <!-- <h2
-        class="
-              text-3xl
-              font-bold
-              tracking-tighter
-              xl:text-6xl
-              none
-              sm:text-5xl"
-            >
-              Hi👋, I'm Saeid Doroudi.
-            </p>
-            <span
-              class="text-pretty text-xl tracking-tighter xl:text-4xl/none sm:text-3xl"
-            >
-              How is it going?
-            </span> -->
   </div>
-  <!--  -->
 </PatternBackground>
