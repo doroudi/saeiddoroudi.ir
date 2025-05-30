@@ -5,6 +5,10 @@ import Separator from "../components/home/separator.astro";
 import Writings from "../components/home/writings.astro";
 import Skills from "../components/skills.astro";
 import Layout from "../layouts/main.astro";
+
+const country =
+  Astro.request.headers.get("CF-IPCountry") || "No CF-IPCountry header";
+console.log("Cloudflare Country Header:", country);
 ---
 
 <Layout title="Saeid Doroudi">
