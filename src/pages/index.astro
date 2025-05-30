@@ -1,14 +1,11 @@
 ---
+import { onMounted } from "vue";
 import Home from "../components/home/home.astro";
 import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
 import Writings from "../components/home/writings.astro";
 import Skills from "../components/skills.astro";
 import Layout from "../layouts/main.astro";
-
-const country =
-  Astro.request.headers.get("CF-IPCountry") || "No CF-IPCountry header";
-console.log("Cloudflare Country Header:", country);
 ---
 
 <Layout title="Saeid Doroudi">
@@ -20,3 +17,12 @@ console.log("Cloudflare Country Header:", country);
   <Separator text="Some of my writing" />
   <Writings />
 </Layout>
+
+<script>
+  fetch("/api/country")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Visitor country:", data.country);
+    })
+    .catch(console.error);
+</script>
