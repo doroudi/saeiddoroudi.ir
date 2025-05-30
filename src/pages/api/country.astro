@@ -1,0 +1,7 @@
+---
+const country = Astro.request.headers.get('CF-IPCountry') || 'No CF-IPCountry header'
+console.log('Cloudflare Country Header:', country)
+---
+
+
+<p>{country}</p>

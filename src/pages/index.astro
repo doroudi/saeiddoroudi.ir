@@ -1,5 +1,4 @@
 ---
-import { onMounted } from "vue";
 import Home from "../components/home/home.astro";
 import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
@@ -17,12 +16,3 @@ import Layout from "../layouts/main.astro";
   <Separator text="Some of my writing" />
   <Writings />
 </Layout>
-
-<script>
-  fetch("/api/country")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log("Visitor country:", data.country);
-    })
-    .catch(console.error);
-</script>
