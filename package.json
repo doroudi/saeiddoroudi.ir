@@ -21,12 +21,11 @@
 	},
 	"packageManager": "pnpm@9.12.2",
 	"dependencies": {
-		"@astrojs/netlify": "^6.3.4",
 		"@astrojs/vue": "^5.0.6",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
-		"motion-v": "1.0.0-alpha.0",
-		"tailwind-merge": "^3.3.0",
+		"motion-v": "1.7.0",
+		"tailwind-merge": "3.0.1",
 		"vue": "^3.5.13"
 	}
 }

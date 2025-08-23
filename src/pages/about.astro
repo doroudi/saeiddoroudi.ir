@@ -8,15 +8,19 @@ import Layout from "../layouts/main.astro";
 
 <Layout title="About Me">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
-    <PageHeading
+    
+   <PageHeading
       title="About Me"
-      description="Hello, I'm Saeid Doroudi from Iran, a FullStack Web Developer. My focus on the .Net ecosystem and VueJs development"
+      description="Hello, I'm Saeid Doroudi from Iran, a full-stack web developer.My focus on the .Net ecosystem and VueJs development"
     />
+    <div class="relative flex justify-center">
+      <img
+        src="/assets/images/me.jpg"
+        class="relative z-30 w-72 my-10 rounded-full object-cover mx-auto"
+        />
 
-    <img
-      src="/assets/images/about2.svg"
-      class="relative z-30 w-full my-10 rounded-xl"
-    />
+        <img src="/assets/images/open-to-work.png" class="absolute z-1 z-40 w-72 my-10 rounded-full object-cover mx-auto" />
+    </div>
 
     <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Short Bio</h2>
     <p
@@ -40,6 +44,8 @@ import Layout from "../layouts/main.astro";
                 dates={experience.dates}
                 role={experience.role}
                 company={experience.company}
+                url={experience.url}
+                industry={experience.industry}
                 description={experience.description}
                 logo={experience.logo}
               />

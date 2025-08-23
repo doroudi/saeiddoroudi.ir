@@ -1,5 +1,5 @@
 ---
-const { logo, dates, role, company, description } = Astro.props;
+const { logo, dates, role, company, description, url, industry } = Astro.props;
 ---
 
 <div class="relative flex flex-col justify-start pl-12">
@@ -15,7 +15,7 @@ const { logo, dates, role, company, description } = Astro.props;
     {dates}
   </p>
   <h3 class="my-1 text-lg font-bold dark:text-neutral-100">{role}</h3>
-  <p class="mb-1 text-sm font-medium dark:text-neutral-300">{company}</p>
+  <p class="mb-1 text-sm font-medium dark:text-neutral-300"><a target="_blank" class="hover:text-green-800" href={url}>{company}</a> - {industry}</p>
   <p class="text-sm font-light text-neutral-600 dark:text-neutral-400">
     {description}
   </p>

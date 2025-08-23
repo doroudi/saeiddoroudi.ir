@@ -16,7 +16,6 @@
 <script lang="ts" setup>
 import {
 	type HTMLAttributes,
-	defineProps,
 	onBeforeUnmount,
 	onMounted,
 	reactive,

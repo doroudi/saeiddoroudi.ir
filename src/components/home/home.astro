@@ -13,7 +13,7 @@ import SVGMask from "../custom-components/svg-mask.vue";
     slot="content"
     class="flex flex-col items-center justify-center w-full h-full"
   >
-    <BlurReveal client:only :delay="0.2" :duration="0.75" class="w-full p-8">
+    <BlurReveal client:only :delay="0.2" :duration=".7" class="w-full p-8">
       <SVGMask client:only size={8} revealSize={150} class="h-[38rem]">
         <div
           slot="base"
@@ -26,7 +26,8 @@ import SVGMask from "../custom-components/svg-mask.vue";
           </h2>
           <p class="text-3xl xl:text-4xl sm:text-3xl pt-3">
             FullStack developer with focus on the
-            <span class="text-indigo-500">.Net</span>
+            <span class="text-indigo-500">.Net</span>,
+            <span class="text-green-500">Vue</span>
           </p>
         </div>
         <div
@@ -39,7 +40,7 @@ import SVGMask from "../custom-components/svg-mask.vue";
             Hi👋 I'm <span>Saeid Doroudi</span>
           </h2>
           <p class="text-3xl xl:text-4xl sm:text-3xl pt-3">
-            FullStack developer with focus on the .Net
+            FullStack developer with focus on the .Net, Vue
           </p>
         </div>
       </SVGMask>

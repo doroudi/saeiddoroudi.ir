@@ -4,9 +4,7 @@
 import {
 	type HTMLAttributes,
 	computed,
-	defineProps,
 	ref,
-	withDefaults,
 } from "vue";
 import { cn } from "../../libs/utils";
 

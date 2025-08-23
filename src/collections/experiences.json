@@ -2,29 +2,37 @@
 	{
 		"dates": "Sep 2024 · Present",
 		"role": "Senior Backend Engineer",
-		"company": "Nextop - Fintech",
+		"company": "NexTop",
+		"industry": "Fintech",
 		"description": "Responsible to migrate legacy .NetFramework system to Microservices architecture based on .Net8 and implementing new features (RabbitMQ, Redis, SqlServer, etc).",
-		"logo": "/assets/images/experiences/nextop.jpg"
+		"logo": "/assets/images/experiences/nextop.jpg",
+		"url": "https://nexttoptech.org"
 	},
 	{
 		"dates": "Sep 2021 · Jul 2024",
 		"role": "FullStack Developer",
-		"company": "Majid Al Futtaim (Hyperstar) - Retail",
+		"company": "Majid Al Futtaim",
+		"industry": "Retail, E-commerce",
 		"description": "Developed and maintained the company's e-commerce platform, including the website and mobile applications.Architecture frontend framework.(.Net, Vue, Rabbit, SqlServer, Azure DevOps)",
-		"logo": "/assets/images/experiences/maf.png"
+		"logo": "/assets/images/experiences/maf.png",
+		"url": "https://www.majidalfuttaim.com/"
 	},
 	{
 		"dates": "September 2018 · July 2024 ",
 		"role": "FullStack Developer",
-		"company": "Mobinnet - ISP",
+		"company": "Mobinnet",
+		"industry": "ISP, Telecom",
 		"description": "Refactoring and developing mobinnet ecare system, build mobile application of eCare, build Moninnet cloud system (Mobicloud), leading Frontend team.",
-		"logo": "/assets/images/experiences/mobinnet.jpg"
+		"logo": "/assets/images/experiences/mobinnet.jpg",
+		"url": "https://www.mobinnet.ir/"
 	},
 	{
 		"dates": "September 2014 · July 2018 ",
 		"role": "CoFounder, Developer",
-		"company": "Elca - Electronic, Software",
+		"company": "Elca",
+		"industry": "Electronic, Software, IOT",
 		"description": "Building software solutions for customers, building multiple startup projects. Build IOT based solutions.",
-		"logo": "/assets/images/experiences/elca.jpg"
+		"logo": "/assets/images/experiences/elca.jpg",
+		"url": "https://elcaco.ir"
 	}
 ]

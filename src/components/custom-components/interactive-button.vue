@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps, ref, withDefaults } from "vue";
+import { ref } from "vue";
 import { cn } from "../../libs/utils";
 
 interface Props {
