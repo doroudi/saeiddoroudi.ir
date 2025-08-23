@@ -12,7 +12,8 @@
 
 <script setup lang="ts">
 import { motion } from "motion-v";
-import { ref, onMounted, watchEffect, useSlots } from "vue";
+import { onMounted, ref, useSlots, watchEffect } from "vue";
+import type { VNode } from "vue";
 
 interface Props {
 	duration?: number;
@@ -33,8 +34,7 @@ const container = ref(null);
 const childElements = ref([]);
 const slots = useSlots();
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const children = ref<any>([]);
+const children = ref<VNode[]>([]);
 
 onMounted(() => {
 	// This will reactively capture all content provided in the default slot
@@ -54,7 +54,7 @@ function getInitial() {
 function getAnimate() {
 	return {
 		opacity: 1,
-		filter: 'blur(0px)',
+		filter: "blur(0px)",
 		y: 0,
 	};
 }

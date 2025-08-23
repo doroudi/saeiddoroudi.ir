@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	mobileMenuFunctionality();
 });
 
-
 window.stickyHeaderFuncionality = () => {
 	window.addEventListener("scroll", () => {
 		evaluateHeaderPosition();

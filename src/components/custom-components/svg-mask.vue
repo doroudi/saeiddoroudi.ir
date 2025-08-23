@@ -1,11 +1,7 @@
 
 
 <script lang="ts" setup>
-import {
-	type HTMLAttributes,
-	computed,
-	ref,
-} from "vue";
+import { type HTMLAttributes, computed, ref } from "vue";
 import { cn } from "../../libs/utils";
 
 interface Props {
