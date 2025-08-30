@@ -15,13 +15,14 @@
 		"@astrojs/tailwind": "^5.1.5",
 		"@biomejs/biome": "1.7.3",
 		"@tailwindcss/typography": "^0.5.16",
-		"astro": "^5.8.1",
+		"astro": "^4.8.2",
 		"tailwindcss": "^3.4.17",
 		"typescript": "^5.8.3"
 	},
 	"packageManager": "pnpm@9.12.2",
 	"dependencies": {
 		"@astrojs/vue": "^5.0.6",
+		"@giscus/vue": "^3.1.1",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"motion-v": "1.7.0",

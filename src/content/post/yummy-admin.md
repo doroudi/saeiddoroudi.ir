@@ -11,4 +11,4 @@ Yummy Admin is Vue 3 and Naive UI-based Admin Panel. almost complete, with suppo
 
 It's already open source, so feel free to use it if you're interested.
 
-<https://github.com/doroudi/yummyadmin>
+<!-- <https://github.com/doroudi/yummyadmin> -->

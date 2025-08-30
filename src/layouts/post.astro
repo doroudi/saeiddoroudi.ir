@@ -1,5 +1,6 @@
 ---
 import Layout from "./main.astro";
+import Comments from "../components/comments.vue";
 const { frontmatter } = Astro.props;
 ---
 
@@ -30,5 +31,7 @@ const { frontmatter } = Astro.props;
     >
       <slot />
     </article>
+
+    <Comments client:idle />
   </main>
 </Layout>
