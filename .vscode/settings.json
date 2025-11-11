@@ -34,5 +34,7 @@
 		"json",
 		"jsonc",
 		"yaml"
-	]
+	],
+	"editor.occurrencesHighlight": false,
+	"editor.selectionHighlight": false
 }
